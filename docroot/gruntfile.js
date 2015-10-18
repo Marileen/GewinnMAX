@@ -3,7 +3,7 @@ module.exports = function (grunt) {
     'use strict';
 
     var project = '';
-    var stylename = 'style_hueck';
+    var stylename = 'style';
     if(grunt.option('project')) {
         project = '_pages/' + grunt.option('project') + '/';
         stylename = project.replace('_pages/', 'pages_');
