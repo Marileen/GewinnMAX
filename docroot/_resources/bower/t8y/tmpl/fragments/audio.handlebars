@@ -1,0 +1,5 @@
+<audio data-controller="t8y/media/AudioPlayer" preload="preload" controls="controls">
+    {{#each sources}}
+        <source src="{{url}}" type="audio/{{type}}"/>
+    {{/each}}
+</audio>

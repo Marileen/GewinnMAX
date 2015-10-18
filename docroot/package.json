@@ -1,0 +1,19 @@
+{
+  "name": "t8y-boilerplate",
+  "version": "1.0.0",
+  "description": "t8y default boilerplate",
+  "main": "index.html",
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "bower": "~1.2.8",
+    "grunt-contrib-less": "~0.8.1",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-contrib-connect": "~0.5.0",
+    "grunt-contrib-copy": "~0.5.0",
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-bower-requirejs": "~0.8.0",
+    "grunt-bower-install-task": "0.0.2",
+    "connect-livereload": "~0.3.1",
+    "grunt-compile-handlebars": "~0.6.2"
+  }
+}

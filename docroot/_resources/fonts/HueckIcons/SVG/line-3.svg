@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="25" height="25" xmlns="http://www.w3.org/2000/svg">
+ <g>
+  <title>line-3</title>
+  <rect id="svg_1" height="5" width="25" y="0" x="0" stroke-width="0" fill="#000000"/>
+  <rect id="svg_2" height="5" width="25" y="10" x="0" stroke-width="0" fill="#000000"/>
+  <rect id="svg_3" height="5" width="25" y="20" x="0" stroke-width="0" fill="#000000"/>
+ </g>
+</svg>

@@ -1,0 +1,34 @@
+{
+  "name": "tkambler/whenLive",
+  "version": "2.0.5",
+  "homepage": "https://github.com/tkambler/whenLive",
+  "authors": [
+    "Tim Ambler <tkambler@gmail.com>"
+  ],
+  "description": "Allows the developer to define one or more callback functions to be fired the moment a specified element becomes available within the DOM.",
+  "main": "src/jquery.whenlive.js",
+  "keywords": [
+    "jQuery",
+    "DOM",
+    "visibility",
+    "live",
+    "whenlive"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "_release": "2.0.5",
+  "_resolution": {
+    "type": "version",
+    "tag": "2.0.5",
+    "commit": "cdd89ee72d4bbd9abc5502d0724f750031014ea3"
+  },
+  "_source": "git://github.com/tkambler/whenLive.git",
+  "_target": "~2.0.5",
+  "_originalSource": "jquery-whenlive"
+}

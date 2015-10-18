@@ -1,0 +1,15 @@
+<video width="100%" height="100%" data-controller="t8y/media/VideoPlayer" poster="{{poster}}" preload="preload" controls="controls">
+    {{#each sources}}
+        <source src="{{url}}" type="video/{{type}}" media="all
+                {{#if max-width}}
+                    and (max-device-width:{{max-width}}px)
+                    {{#if retina}}
+                        and (-webkit-min-device-pixel-ratio: 1.5)
+                    {{else}}
+                        and (-webkit-max-device-pixel-ratio: 1.5)
+                    {{/if}}
+                {{/if}}
+        "/>
+    {{/each}}
+    <div></div>
+</video>

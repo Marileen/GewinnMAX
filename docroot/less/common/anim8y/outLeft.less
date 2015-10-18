@@ -1,0 +1,55 @@
+.outLeft( @distance : -100% ) {
+
+    @-webkit-keyframes outLeft {
+        0% {
+            visibility: visible;
+            -webkit-transform: translateX(0);
+        }
+        100% {
+            visibility: hidden;
+            -webkit-transform: translateX(@distance);
+        }
+    }
+
+    @-moz-keyframes outLeft {
+        0% {
+            visibility: visible;
+            -moz-transform: translateX(0);
+        }
+        100% {
+            visibility: hidden;
+            -moz-transform: translateX(@distance);
+        }
+    }
+
+    @-o-keyframes outLeft {
+        0% {
+            visibility: visible;
+            -ms-transform: translateX(0);
+        }
+        100% {
+            visibility: hidden;
+            -ms-transform: translateX(@distance);
+        }
+    }
+
+    @keyframes outLeft {
+        0% {
+            visibility: visible;
+            transform: translateX(0);
+        }
+        100% {
+            visibility: hidden;
+            transform: translateX(@distance);
+        }
+    }
+
+    .outLeft {
+        -webkit-animation-name: outLeft;
+        -moz-animation-name: outLeft;
+        -o-animation-name: outLeft;
+        animation-name: outLeft;
+    }
+
+
+}

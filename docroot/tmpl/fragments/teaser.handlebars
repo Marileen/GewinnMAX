@@ -1,0 +1,85 @@
+<div class="teaser controller {{type}} {{#if link}}listing picture{{/if}}" data-fragment="teaser" data-controller="fragments/Teaser" {{#if button.href}}data-href="{{button.href}}"{{/if}} {{#if inlineButton.href}}data-href="{{inlineButton.href}}"{{/if}} {{#if button.target}}data-href-target="{{button.target}}"{{/if}} {{#if inlineButton.target}}data-href-target="{{inlineButton.target}}"{{/if}}>
+
+    {{#if content}}
+    <div class="content">
+
+        {{#if headline}}
+            {{#if headline.h1}}
+                <h1>{{{headline.h1}}}</h1>
+            {{/if}}
+            {{#if headline.h2}}
+                <h2>{{{headline.h2}}}</h2>
+            {{/if}}
+            {{#if headline.h3}}
+                <h3>{{{headline.h3}}}</h3>
+            {{/if}}
+        {{/if}}
+
+        {{#if content.headline}}<h4>{{{content.headline}}}</h4>{{/if}}
+
+        {{#if content.text}}
+        <div class="text">
+            {{{content.text}}}{{#if inlineButton}}<a href="#" class="btn link glyphicon-arrow-right"></a>{{/if}}
+        </div>
+        {{/if}}
+
+        {{#if content.arrow}}
+        <ul class="arrow">
+            {{#each content.arrow}}
+            <li>{{{li}}}</li>
+            {{/each}}
+        </ul>
+        {{/if}}
+
+        {{#if content.button}}
+            <div class="button">
+                <a class="btn {{content.button.type}}" href="{{content.button.href}}"><span class="text">{{content.button.text}}</span></a>
+            </div>
+        {{/if}}
+
+    </div>
+    {{/if}}
+
+    {{#if image}}
+        {{#if image.zoom}}
+            {{#if layer}}
+            {{else}}
+            <div class="magnifier controller" data-fragment="magnifier" data-controller="fragments/Lightbox">
+                <a class="btn btn-grey glyphicon-magnifier-plus open" href="#" data-element="fullscreenButton"></a>
+                <hgroup><h2>{{link.text}}</h2></hgroup>
+                {{>assets/image image}}
+                <a class="btn btn-grey glyphicon-close close" href="#" data-element="closeButton"></a>
+            </div>
+            {{/if}}
+        {{else}}
+            {{>assets/image image}}
+        {{/if}}
+    {{/if}}
+
+    {{#if button}}
+    <div class="button">
+        <a class="btn {{button.type}}" href="{{button.href}}"><span class="text">{{button.text}}</span><span class="glyphicon glyphicon-arrow-right"></span></a>
+    </div>
+    {{/if}}
+
+    {{#if link}}
+    <div class="button">
+        {{#if layer}}
+            <div class="magnifier controller" data-fragment="magnifier" data-controller="fragments/Lightbox">
+                <hgroup><h2>{{link.text}}</h2></hgroup>
+                {{>assets/image image}}
+                {{#if layer.text}}
+                    <div class="layer">
+                        {{{layer.text}}}
+                    </div>
+                {{/if}}
+                <a class="btn btn-grey glyphicon-close close" href="#" data-element="closeButton"></a>
+                <span class="btn open {{link.type}}" data-element="fullscreenButton"><span class="text">{{link.text}}</span><span class="glyphicon glyphicon-magnifier-plus"></span></span>
+            </div>
+        {{else}}
+            <span class="btn {{link.type}}"><span class="text">{{link.text}}</span><span class="glyphicon glyphicon-magnifier-plus open"></span></span>
+        {{/if}}
+    </div>
+    {{/if}}
+
+</div>

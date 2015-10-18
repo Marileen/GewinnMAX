@@ -1,0 +1,91 @@
+.tip[data-asset="tip"] {
+    .opacity( 0 );
+    visibility: hidden;
+    position: absolute;
+    min-width: 300px;
+    width: 300px;
+    min-height: 150px;
+    left: 45px;
+    top: -10px;
+    background-color: @hueck-white;
+    color: @hueck-black;
+    padding: 20px 20px 25px;
+    font-family: @font-family-base;
+    font-size: @font-size-base;
+    font-weight: normal;
+    text-align: left;
+    z-index: 20;
+    .box-shadow( 0 0 0 2px @hueck-blue, 0 0 4px @hueck-grey );
+    .transition( all 350ms ease-in-out );
+
+    .arrow {
+        position: absolute;
+        width: 20px;
+        height: 30px;
+        left: -20px;
+        top: 10px;
+        overflow: hidden;
+        &:before {
+            content: "";
+            background-color: @hueck-white;
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            top: 5px;
+            left: 10px;
+            .transform( rotate(145deg) skew(20deg) );
+            .box-shadow( 0 0 0 2px @hueck-blue, 0 0 4px @hueck-grey );
+        }
+    }
+
+    &.left-bottom {
+        left: -315px;
+        top: -10px;
+        .arrow {
+            left: 300px;
+            top: 10px;
+            width: 20px;
+            height: 30px;
+            &:before {
+                width: 20px;
+                height: 20px;
+                top: 5px;
+                left: -10px;
+                .transform( rotate(145deg) skew(20deg) );
+            }
+        }
+    }
+
+    &.bottom-right {
+        left: -15px;
+        top: 45px;
+        .arrow {
+            left: 15px;
+            top: -20px;
+            width: 30px;
+            height: 20px;
+            &:before {
+                top: 10px;
+                left: 5px;
+                .transform( rotate(55deg) skew(20deg) );
+            }
+        }
+    }
+
+    &.bottom-left {
+        left: -255px;
+        top: 45px;
+        .arrow {
+            left: 255px;
+            top: -20px;
+            width: 30px;
+            height: 20px;
+            &:before {
+                top: 10px;
+                left: 5px;
+                .transform( rotate(55deg) skew(20deg) );
+            }
+        }
+    }
+
+}

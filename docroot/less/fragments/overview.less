@@ -1,0 +1,29 @@
+.overview[data-fragment="overview"] {
+
+    margin: 10px 0 0 @content-grid-padding;
+    padding: 0;
+    border-top: 1px solid @hueck-form-grey;
+    float: left;
+
+    h4 {
+        font-weight: bold;
+    }
+
+    .field {
+        &.row {
+            margin: @content-grid-padding -@content-grid-padding 0 0;
+            .col-3 {
+                font-weight: bold;
+            }
+            &.line-bottom {
+                border-bottom: 1px solid #c8c8c8;
+                margin-bottom: 20px;
+            }
+            &.box {
+                margin-bottom: 20px;
+            }
+        }
+
+    }
+
+}

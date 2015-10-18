@@ -1,0 +1,45 @@
+[data-asset="flag"] {
+
+  background-color: @baselink;
+  font-size: 14px;
+  font-style: normal;
+  text-transform: uppercase;
+  padding-right: 10px;
+  padding-left: 13px;
+  color: #ffffff;
+  position: relative;
+  display: inline-block;
+  line-height: 28px;
+  margin-left: 0.5em;
+  letter-spacing: 1.1px;
+
+  .svgFlag {
+    position: absolute;
+    top: 0;
+    left: -7px;
+  }
+
+  .svgFlag polygon {
+    color: @baselink;
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    left: -0.45em;
+    top: 0;
+    height: 100%;
+    border-top: 1em solid @baselink;
+    border-bottom: 1em solid @baselink;
+    border-left: 0.5em solid transparent;
+  }
+
+  @media (min-width: @screen-sm) {
+
+    font-size: 15px;
+    line-height: 30px;
+  }
+}
+
+
+

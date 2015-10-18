@@ -1,0 +1,56 @@
+.form-row {
+
+    float: left;
+    width: 100%;
+    .col-9 & {
+        padding: 0 0 0 @content-grid-padding;
+    }
+    position: relative;
+
+    &.border-top {
+        .border-top();
+        .textblock[data-fragment="textblock"] .content {
+            margin: 0 0 (@content-grid-padding - 9) 0;
+        }
+        .checkbox {
+            margin: 0;
+        }
+    }
+
+    &.border-bottom {
+        .border-bottom();
+    }
+
+    &.button-row {
+        .border-top();
+    }
+
+}
+
+.border-top() {
+    margin-top: 10px;
+    padding-top: 40px;
+    &:before {
+        border-top: 1px solid @hueck-form-grey;
+        content: "";
+        height: 1px;
+        left: @content-grid-padding;
+        position: absolute;
+        top: 7px;
+        width: 715px;
+    }
+}
+
+.border-bottom() {
+    padding-bottom: 30px;
+    margin-bottom: 25px;
+    &:before {
+        border-bottom: 1px solid @hueck-form-grey;
+        content: "";
+        height: 1px;
+        left: @content-grid-padding;
+        position: absolute;
+        bottom: 7px;
+        width: 715px;
+    }
+}

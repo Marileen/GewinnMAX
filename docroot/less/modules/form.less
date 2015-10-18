@@ -1,0 +1,143 @@
+form[data-module="form"] {
+
+//    overflow: hidden;
+    float: left;
+    width: 100%;
+
+    .select {
+        .field {
+            width: 50%;
+            &.full {
+                width: 100%;
+            }
+        }
+    }
+
+    .captcha {
+        .field, .image {
+            width: 25%;
+        }
+    }
+
+    .radio {
+        .field {
+            width: 25%;
+        }
+    }
+
+    .checkbox {
+        float: left;
+        width: 100%;
+        .field {
+            width: 100%;
+        }
+        .text {
+            width: 85%;
+        }
+        .message[data-fragment="message"] {
+            padding: 0 0 0 33px;
+        }
+    }
+
+    [data-element="search"] {
+
+        display: inline-block;
+        margin: 0.5em 0;
+        position: relative;
+        width: 100%;
+
+        input[type="text"] {
+            height: 42px;
+            width: 100%;
+            padding-left: 0.5em;
+        }
+
+        a {
+            position: absolute;
+            right: 1px;
+            top: 1px;
+            background-color: @button-black-bg-base;
+            height: 40px;
+            width: 40px;
+            color: @hueck-white;
+            text-decoration: none;
+            font-size: 23px;
+            padding: 9px;
+
+            &:hover {
+                background-color: @button-grey-bg-hover;
+            }
+
+        }
+    }
+
+    [data-element="send"] {
+
+        display: inline-block;
+        margin: 0.5em 0;
+        position: relative;
+        width: 100%;
+
+        input[type="text"] {
+            height: 42px;
+            width: 100%;
+            padding-left: 0.5em;
+            margin: 0 0 1.5em;
+        }
+
+        p.required {
+            color: @hueck-grey;
+            padding: 0.7em 0;
+        }
+
+        a {
+            color: @hueck-white;
+        }
+
+        a.button {
+            background-color: @button-black-bg-base;
+            font-size: 1em;
+            color: @hueck-white;
+            text-decoration: none;
+            padding: 10px 20px 10px 25px;
+            border: 1px solid @button-black-border-color;
+            .box-shadow(0px 2px 2px 0px rgba(0, 0, 0, 0.15));
+            float: right;
+            display: table;
+
+            span {
+                display: table-cell;
+                vertical-align: middle;
+
+                &.glyphicon {
+                    font-size: 1.5em;
+                }
+            }
+
+            &:hover {
+                background-color: @button-grey-bg-hover;
+            }
+
+        }
+    }
+
+
+    &.send-a-link {
+        margin: 0 0 15px 0;
+    }
+
+    &.ansprechpartner {
+        .radio .field {
+            width: 33%;
+        }
+        .btn.right {
+            margin: 0 0 0 1em;
+        }
+    }
+
+    hgroup > .btn:first-child {
+      position: relative;
+      top: 0;
+    }
+
+}

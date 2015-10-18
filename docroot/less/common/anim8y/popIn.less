@@ -1,0 +1,196 @@
+.popIn() {
+
+  animation: 500ms ease 1s normal forwards 1 openSpace, 250ms ease 1.25s normal forwards 1 moveIn;
+
+  @keyframes openSpace {
+    from {
+      max-height: 0px;
+      min-height: 0px;
+    }
+    to {
+      max-height: 150px;
+      min-height: 150px;
+    }
+  }
+  @keyframes moveIn {
+    from {
+      opacity: 0;
+      transform:translateX(-300px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+
+  // --- //
+
+  @-webkit-keyframes openSpace {
+    from {
+      max-height: 0px;
+      min-height: 0px;
+    }
+    to {
+      max-height: 150px;
+      min-height: 150px;
+    }
+  }
+  @-webkit-keyframes moveIn {
+    from {
+      opacity: 0;
+      transform:translateX(-300px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  // --- //
+
+  @-o-keyframes openSpace {
+    from {
+      max-height: 0px;
+      min-height: 0px;
+    }
+    to {
+      max-height: 150px;
+      min-height: 150px;
+    }
+  }
+  @-o-keyframes moveIn {
+    from {
+      opacity: 0;
+      transform:translateX(-300px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+
+  // --- //
+
+  @-moz-keyframes openSpace {
+    from {
+      max-height: 0px;
+      min-height: 0px;
+    }
+    to {
+      max-height: 150px;
+      min-height: 150px;
+    }
+  }
+  @-moz-keyframes moveIn {
+    from {
+      opacity: 0;
+      transform:translateX(-300px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+}
+
+.popOut() {
+
+  animation: moveOut 500ms ease 0s normal forwards 1, closeSpace 1s ease 500ms normal forwards 1;
+
+  @keyframes moveOut {
+    from {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    to {
+      opacity: 0;
+      transform: translateX(-300px);
+    }
+  }
+  @keyframes closeSpace {
+    from {
+      max-height: 150px;
+      min-height: 150px;
+    }
+    to {
+      max-height: 0px;
+      min-height: 0px;
+    }
+
+  }
+
+  // --- //
+
+  @-webkit-keyframes moveOut {
+    from {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    to {
+      opacity: 0;
+      transform: translateX(-300px);
+    }
+  }
+  @-webkit-keyframes closeSpace {
+    from {
+      max-height: 150px;
+      min-height: 150px;
+    }
+    to {
+      max-height: 0px;
+      min-height: 0px;
+    }
+
+  }
+
+  // --- //
+
+  @-o-keyframes moveOut {
+    from {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    to {
+      opacity: 0;
+      transform: translateX(-300px);
+    }
+  }
+  @-o-keyframes closeSpace {
+    from {
+      max-height: 150px;
+      min-height: 150px;
+    }
+    to {
+      max-height: 0px;
+      min-height: 0px;
+    }
+
+  }
+  // --- //
+
+  @-moz-keyframes moveOut {
+    from {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    to {
+      opacity: 0;
+      transform: translateX(-300px);
+    }
+  }
+  @-moz-keyframes closeSpace {
+    from {
+      max-height: 150px;
+      min-height: 150px;
+    }
+    to {
+      max-height: 0px;
+      min-height: 0px;
+    }
+
+  }
+
+
+}

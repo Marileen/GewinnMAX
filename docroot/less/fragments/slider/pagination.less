@@ -1,0 +1,46 @@
+.slider[data-fragment="slider/pagination"] {
+
+    display: block;
+    margin: 0 0 1em;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+
+    li {
+        display: inline-block;
+        position: relative;
+        padding: 0 0.25em 0 0;
+        a {
+            width: 14px;
+            height: 14px;
+            display: block;
+            cursor: pointer;
+            text-decoration: none;
+
+            .glyphicon-dot();
+            &:before {
+                position: absolute;
+                color: @paging-color-base;
+                font-family: 'HueckIcons';
+                font-size: 1.5em;
+                line-height: 1;
+                left: -0.2em;
+                top: -0.2em;
+            }
+            &:hover, &.hover {
+                &:before {
+                    color: @paging-color-hover;
+                }
+            }
+        }
+
+        &.active {
+            a {
+                &:before {
+                    color: @paging-color-active;
+                }
+            }
+        }
+    }
+
+}

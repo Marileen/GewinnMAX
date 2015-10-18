@@ -1,0 +1,60 @@
+.accordion[data-fragment="accordion"] {
+
+    float: left;
+    width: 100%;
+    position: relative;
+
+    .toggle {
+        float: left;
+        margin: 1em 1em 0 0;
+        padding: 0.75em 1.25em;
+        &:before {
+            right: 0.35em;
+        }
+    }
+
+    > hgroup {
+        cursor: pointer;
+        display: table;
+        height: 70px;
+        padding: 0;
+        width: 90%;
+        -moz-user-select:none;
+        -khtml-user-select: none;
+        h1, h2, h3 {
+            display: table-cell;
+            vertical-align: middle;
+            margin-bottom: 0;
+        }
+    }
+
+    .content {
+        display: none;
+//        max-height: 0;
+//        overflow: hidden;
+//        .transition( max-height 600ms ease-in-out );
+    }
+
+    &.open {
+        .toggle {
+            .glyphicon-arrow-down();
+        }
+        .content {
+            display: block;
+//            height: auto;
+//            max-height: 2000px;
+        }
+    }
+
+    .row & {
+        padding: 0 0 0 @content-grid-padding;
+    }
+
+    .textblock[data-fragment="textblock"] {
+        .content, hgroup {
+            margin-left: 0;
+            padding-left: 0;
+        }
+    }
+
+}

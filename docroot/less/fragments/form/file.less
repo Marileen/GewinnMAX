@@ -1,0 +1,97 @@
+.file {
+    .fileinput-button {
+        position: relative;
+        overflow: hidden;
+        float: left;
+    }
+    .fileinput-button input {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 0;
+        .opacity( 0 );
+        font-size: 200px;
+        direction: ltr;
+        cursor: pointer;
+    }
+    .progress {
+        float: left;
+        width: 100%;
+    }
+    .message.error[data-fragment="message"] {
+        width: 70%;
+        .text {
+            display: none !important;
+            &.show {
+                display: table-cell !important;
+            }
+        }
+    }
+    .files {
+        float: left;
+        width: 100%;
+        .btn {
+            margin: 0.75em 1em 0.75em 0;
+            &.loading {
+                &:after {
+                    left: auto;
+                    right: 19px;
+                    top: 11px;
+                }
+                &:before {
+                    content: "";
+                }
+            }
+        }
+
+        .preview {
+            display: none;
+            padding: 0 0 10px;
+            &.active {
+                display: block;
+            }
+        }
+
+        .item {
+            float: left;
+            width: 100%;
+            height: 150px;
+            margin: 20px 20px 0 0;
+            background-color: @hueck-white;
+            position: relative;
+            p > span {
+                display: inline-block;
+                float: left;
+                width: 100%;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                img {
+                    width: 100px;
+                    max-width: 100px;
+                    max-height: 120px;
+                }
+                a {
+                    text-decoration: none;
+                    padding: 0 0 0 10px;
+                    color: @hueck-blue;
+                    &:hover {
+                        text-decoration: underline;
+                        color: @hueck-grey;
+                    }
+                    span {
+                        display: inline-block;
+                        margin: -4px 2px 0 0;
+                    }
+                }
+            }
+            .btn.loading {
+                right: 0;
+                margin: 0;
+                max-width: 250px;
+                position: absolute;
+                top: 0;
+            }
+        }
+    }
+}

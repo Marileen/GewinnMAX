@@ -1,0 +1,39 @@
+.job[data-fragment="listing/job"] {
+
+    padding: 10px 0 0 @content-grid-padding;
+    width: 100%;
+    float: left;
+
+    &:last-child {
+        padding-bottom: 25px;
+    }
+
+    + .job[data-fragment="listing/job"] {
+        .content {
+            border-top: 0 none;
+        }
+    }
+
+    .content {
+        border-top: 1px solid @hueck-form-grey;
+        border-bottom: 1px solid @hueck-form-grey;
+        width: 100%;
+        float: left;
+        padding: 10px 0 15px 0;
+
+        .link {
+            width: 50%;
+            float: left;
+            .message {
+                color: @hueck-green;
+                margin-top: 10px;
+            }
+        }
+
+        .description {
+            width: 50%;
+            float: left;
+        }
+    }
+
+}

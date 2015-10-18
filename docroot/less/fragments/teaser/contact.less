@@ -1,0 +1,147 @@
+[data-fragment="teaser/contact"] {
+
+    border: 1px solid @hueck-teaser-border;
+    display: table;
+    position: relative;
+    margin: 0 0 @content-grid-padding 0;
+    &:first-child {
+        margin: @content-grid-padding 0;
+    }
+    width: 100%;
+    .box-shadow( 0 2px 2px rgba(0,0,0,.15) );
+
+    .image[data-asset="image"] {
+        .img {
+            max-height: 160px;
+        }
+    }
+
+    /* TODO AUFRAEUMEN!!!! Viel Mist drin */
+
+    .telefon {
+        border-right: 1px solid @hueck-teaser-border;
+        display: table-cell;
+        vertical-align: middle;
+        text-align: right;
+
+        &.wide {
+            width: 69%;
+
+            ~ .callback, ~ .chat, ~ .mail {
+                width: 31%;
+            }
+        }
+
+        &.medium {
+            width: 50%;
+
+            ~ .callback, ~ .chat, ~ .mail {
+                width: 25%;
+            }
+        }
+        &.small {
+            width: 50%;
+
+            ~ .callback, ~ .chat, ~ .mail {
+                width: 16.6%;
+            }
+        }
+
+        .poster {
+            vertical-align: bottom;
+            min-height: 130px;
+        }
+
+        .text {
+            font-family: eurofurence, arial, sans-serif;
+            width: 300px;
+            position: absolute;
+            top: 30px;
+            left: 25px;
+
+            > span {
+                display: block;
+            }
+        }
+    }
+
+    .callback, .chat, .mail {
+        border-right: 1px solid @hueck-teaser-border;
+        min-width: 110px;
+        width: 100%;
+        text-align: center;
+        display: table-cell;
+        vertical-align: middle;
+
+        &:hover {
+            background: @hueck-teaser-hover;
+            cursor: pointer;
+        }
+    }
+
+    .mail {
+        border-right: none;
+        a {
+            text-decoration: none;
+        }
+    }
+
+    .contact-name,
+    .contact-text {
+        position: relative;
+        color: #59514F;
+        font-family: eurofurence, arial, sans-serif;
+        font-size: 30px;
+        line-height: 1em;
+        width: auto;
+        height: auto;
+        z-index: 10;
+    }
+    .contact-smallText {
+        position: relative;
+        color: #59514F;
+        font-family: eurofurence, arial, sans-serif;
+        font-size: 14px;
+        width: auto;
+        height: auto;
+        z-index: 10;
+        margin-left: 38px;
+    }
+    .glyphicon-mail, .glyphicon-chat, .glyphicon-callback {
+
+        &:before {
+            font-size: 39px;
+        }
+        position: relative;
+        font-size: 16px;
+        color: #0082C8;
+
+        > span {
+            position: relative;
+            top: 35px;
+            left: -8px;
+            font-size: 17px;
+            color: #0082C8;
+            height: auto;
+            width: 60px;
+        }
+    }
+
+    .glyphicon-phone {
+        position: relative;
+        font-size: 30px;
+        color: #0082C8;
+
+        > span {
+            position: relative;
+            top: 35px;
+            left: -8px;
+            font-size: 17px;
+            color: #0082C8;
+            height: auto;
+            width: 60px;
+            line-height: 10px !important;
+        }
+    }
+
+}

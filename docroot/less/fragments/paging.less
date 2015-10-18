@@ -1,0 +1,28 @@
+.paging[data-fragment="paging"] {
+
+    &.page {
+
+        .dotdotdot, .active span {
+            line-height: 1.2em;
+            margin: 0 0.25em 1.5em;
+            vertical-align: top;
+        }
+
+        .btn {
+            &.link {
+                margin: 0 0.5em 1.5em;
+                text-decoration: underline;
+                &:first-child {
+                    margin-left: 0;
+                }
+            }
+        }
+
+        &.active {
+            color: @hueck-black;
+            text-decoration: none;
+        }
+
+    }
+
+}

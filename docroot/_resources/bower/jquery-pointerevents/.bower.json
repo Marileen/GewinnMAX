@@ -1,0 +1,36 @@
+{
+  "name": "jquery-pointerevents",
+  "version": "0.5.2",
+  "description": "Basic polyfill for Pointer Events W3C Specification",
+  "keywords": [
+    "jquery",
+    "pointerevents",
+    "polyfill"
+  ],
+  "authors": [
+    "Kir Belevich <kir@soulshine.in> (https://github.com/deepsweet)"
+  ],
+  "homepage": "https://github.com/deepsweet/jquery-pointerevents",
+  "license": "MIT",
+  "main": "dist/jquery-pointerevents.js",
+  "ignore": [
+    ".*",
+    "package.json",
+    "pointerevents.jquery.json",
+    "Makefile",
+    "src/",
+    "node_modules/",
+    "bower_components/",
+    "test/",
+    "tmp/"
+  ],
+  "_release": "0.5.2",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.5.2",
+    "commit": "0cf83f8685d3cb14a27e34907523faeb20ac0ccf"
+  },
+  "_source": "git://github.com/deepsweet/jquery-pointerevents.git",
+  "_target": "~0.5.2",
+  "_originalSource": "jquery-pointerevents"
+}

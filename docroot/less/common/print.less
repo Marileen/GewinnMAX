@@ -1,0 +1,234 @@
+@media print {
+
+    .nav[data-fragment="header/menu"] > ul,
+    .nav[data-fragment="header/menu"] .accordion[data-fragment="accordion"] .toggle,
+    .nav[data-fragment="header/menu"] .title,
+    .context[data-module="context"],
+    .search[data-fragment="search"],
+    hgroup > .btn:first-child,
+    .thumbnail[data-fragment="slider/thumbnail"] {
+        display: none !important;
+    }
+
+    .header[data-module="header"] {
+        width: 100% !important;
+        position: relative !important;
+        left: auto !important;
+        height: auto !important;
+        bottom: auto !important;
+        top: 0 !important;
+        .logo[data-fragment="header/logo"] {
+            padding: 0 !important;
+            width: 170px !important;
+        }
+    }
+
+    .content[data-module="content"] {
+        margin: 10px 0 25px 0 !important;
+        max-width: 100% !important;
+        min-height: 100px !important;
+    }
+
+    @page {
+        margin: 1.5cm 1cm 1.5cm 2cm;
+    }
+
+    h1, h2, h3 {
+        page-break-after: avoid;
+    }
+    h1 {
+        font-size: 30pt;
+        margin: 10px 0 20px !important;
+    }
+    h2 {
+        font-size: 20pt;
+    }
+    h3 {
+        font-size: 20pt;
+    }
+    h4, h5 {
+        font-size: 15px;
+    }
+    .content[data-module="content"] .row .col {
+        padding: 0 !important;
+    }
+
+    .container,
+    .content[data-module="content"] .row .col.col-9 {
+        width: 100% !important;
+    }
+
+    .text[data-fragment="listing/text"] {
+        padding: 0 !important;
+    }
+
+    .text[data-fragment="listing/text"] + .text[data-fragment="listing/text"] {
+        padding-top: 70px !important;
+    }
+
+    .content[data-module="content"] .row.border-top:before,
+    .text[data-fragment="listing/text"],
+    .text[data-fragment="listing/text"] + .text[data-fragment="listing/text"]:before,
+    .content[data-module="content"] .row.border-bottom:after {
+        width: 100% !important;
+        left: 0 !important;
+        border-color: #000 !important;
+    }
+
+    hgroup {
+        padding-left: 0 !important;
+    }
+
+    .header[data-module="header"],
+    .footer[data-module="footer"] {
+        a[href]:after {
+            content: "" !important;
+        }
+        max-width: 100% !important;
+    }
+
+    .galerie[data-fragment="galerie"] {
+        margin: 0 0 25px 0 !important;
+    }
+
+    .content[data-module="content"] .row .col.col-3 {
+        width: 30% !important;
+    }
+    .content[data-module="content"] .row .col.col-6 {
+        width: 60% !important;
+    }
+
+    .download[data-fragment="listing/download"] {
+        padding: 10px 0 0 0 !important;
+        float: left;
+    }
+    .download[data-fragment="listing/download"].image .content > .image[data-asset="image"] {
+        padding: 0 25px 0 0 !important;
+    }
+
+    .col-9 .form-row,
+    .row .accordion[data-fragment="accordion"] {
+        padding: 0 !important;
+    }
+    .accordion[data-fragment="accordion"] .toggle:before {
+        color: black;
+    }
+    .textblock[data-fragment="textblock"] .content {
+        margin: 0 0 25px 0 !important;
+        position: relative;
+    }
+    .label {
+        border: 0px solid #000;
+    }
+    .btn.right {
+        float: left !important;
+        margin: 0 0 1.5em 0 !important;
+    }
+    .form .form-control,
+    .form .has-error .form-control,
+    .form .has-error .message-color,
+    .form .has-success .form-control,
+    .form .has-success .message-color,
+    .form .btn {
+        border-color: #000 !important;
+    }
+
+    .form-row.border-top:before,
+    .form-row.button-row:before {
+        border-top: 0 none !important;
+    }
+
+    .accordion[data-fragment="accordion"] .content {
+        display: block !important;
+    }
+
+    .teaser[data-fragment="teaser"] {
+        border-color: #000 !important;
+        page-break-after: auto !important;
+        page-break-before: auto !important;
+        min-height: 0 !important;
+        max-height: auto !important;
+        height: auto !important;
+    }
+
+    .content[data-module="content"] .row .col.col-4-and-half {
+        width: 49% !important;
+        margin-left: 2% !important;
+    }
+    .content[data-module="content"] .row .col.col-4-and-half:first-child {
+        margin-left: 0 !important;
+    }
+
+    .moreInfos {
+        page-break-after: auto !important;
+        page-break-before: always !important;
+        page-break-inside: auto !important;
+    }
+
+    .galerie[data-fragment="galerie"] .magnifier[data-fragment="magnifier"] {
+        display: none;
+    }
+    .galerie[data-fragment="galerie"] .zoomImage[data-fragment="zoomImage"] .caption {
+        float: left;
+        position: relative !important;
+        border: 1px solid #000;
+    }
+
+
+    .footer[data-module="footer"] {
+        overflow: visible !important;
+        position: relative !important;
+        float: left !important;
+        width: 100% !important;
+    }
+    .footer[data-module="footer"] .col {
+        padding: 0 !important;
+    }
+    .footer[data-module="footer"] .top ul {
+        border-color: #000 !important;
+    }
+    .footer[data-module="footer"] .top ul li span {
+        display: block;
+    }
+    .footer[data-module="footer"] .top ul li a {
+        padding: 0 25px 0 0 !important;
+    }
+    .footer[data-module="footer"] .top ul li img {
+        width: 95% !important;
+        float: left !important;
+        display: inline-block !important;
+    }
+    .footer[data-module="footer"] .bottom .contact ul li {
+        display: block !important;
+    }
+    .footer[data-module="footer"] .col-sm-7 {
+        width: 40%;
+        padding: 0 5% 0 0 !important;
+    }
+    .footer[data-module="footer"] .col-sm-3 {
+        width: 30%;
+        padding: 0 5% 0 0 !important;
+    }
+    .footer[data-module="footer"] .col-sm-2 {
+        width: 20%;
+        padding: 0 !important;
+    }
+
+}
+
+//Start HUECK-341
+@media print {
+
+    .print-products .teaser {
+        display: none;
+    }
+
+    .print-products .logo {
+        display: none;
+    }
+
+    .print-products .footer {
+        display: none;
+    }
+}
+//End HUECK-341

@@ -1,0 +1,30 @@
+hgroup {
+
+    > .btn {
+        &:first-child {
+            margin: 0;
+            position: absolute;
+            top: 12px;
+        }
+    }
+
+    padding-left: @content-grid-padding;
+    padding-right: @content-grid-padding;
+
+    float: left;
+    width: 100%;
+
+    h3, h4, h5, h6 {
+        color: @hueck-black;
+    }
+
+}
+
+article + hgroup {
+    padding-top: @content-grid-padding;
+}
+
+.fix hgroup,
+.default hgroup {
+    float: none;
+}

@@ -1,0 +1,167 @@
+.textblock[data-fragment="textblock"] {
+
+    float: left;
+    width: 100%;
+
+    .content {
+
+        margin: 0 0 @content-grid-padding @content-grid-padding;
+        position: relative;
+
+        .no-text-padding & {
+            margin-left: 0;
+        }
+
+        p {
+            font-size: @font-size-base;
+            //line-height: 21px;
+            line-height: 1.2;
+        }
+
+        .zoomImage[data-fragment="zoomImage"] {
+            img {
+                display: inline;
+                width: 100%;
+            }
+            .caption {
+                background-color: transparent;
+                color: @hueck-grey;
+                position: relative;
+                //padding: 0 0 0.75em;
+                p {
+                    padding: 0.75em 0.75em 0 0;
+                    margin: 0;
+                }
+            }
+        }
+
+    }
+
+    .col-3 & {
+        hgroup {
+            h4 {
+                margin: 0 0 3px;
+            }
+        }
+    }
+
+    hgroup {
+        padding-right: 0;
+        .no-text-padding & {
+            padding-left: 0;
+        }
+    }
+
+    &.default {
+        .zoomImage {
+            margin: 0 0 15px;
+        }
+    }
+
+    &.image-left {
+        .zoomImage {
+            float: left;
+            padding: 0 @content-grid-padding @content-grid-padding 0;
+        }
+    }
+
+    &.image-right {
+        .zoomImage {
+            float: right;
+            padding: 0 0 @content-grid-padding @content-grid-padding ;
+        }
+    }
+
+    &.fix {
+        .fix {
+            display: table-cell;
+        }
+        .zoomImage {
+            display: table-cell;
+        }
+    }
+
+
+    table {
+
+        table-layout: fixed;
+
+        caption {
+            font-family: Eurofurence,arial,verdana,sans-serif;
+            font-size: 30px;
+            font-weight: normal;
+            margin: 0 0 15px;
+            text-align: left;
+            text-transform: uppercase;
+        }
+
+        th, thead {
+            font-weight: bold;
+        }
+
+        th, thead, td, tfoot {
+            border: 1px solid @hueck-form-grey;
+            padding: 18px 9px;
+        }
+
+        td {
+            p {
+                margin: 0;
+            }
+            &.blue,
+            &:first-child  {
+                color: @hueck-blue;
+            }
+            &.black {
+                color: @hueck-black;
+            }
+        }
+
+        thead {
+            background-color: @hueck-lightgrey;
+        }
+
+        + * {
+            margin: 15px 0 0;
+        }
+
+        + table {
+            margin-top: -1px;
+        }
+
+        &.sort th {
+          position: relative;
+
+          &:hover {
+            cursor: pointer;
+          }
+
+          -webkit-user-select: none;  /* Chrome all / Safari all */
+          -moz-user-select: none;     /* Firefox all */
+          -ms-user-select: none;      /* IE 10+ */
+          user-select: none;
+
+          &:after {
+            font-family: 'HueckIcons';
+            content: "\e603";
+            font-size: 2em;
+            color: @hueck-blue;
+
+            position: absolute;
+            right: 15px;
+            top: 10px;
+          }
+
+          &.active {
+            background-color: rgba(0, 130, 200, 0.3);
+
+            &.asc:after {
+              font-family: 'HueckIcons';
+              content: "\e602";
+
+            }
+          }
+        }
+    }
+
+}

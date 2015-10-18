@@ -1,0 +1,66 @@
+.header[data-common="gw-header"] {
+
+  padding: 25px 0;
+
+  .shadow(#ffffff, rgba(23,54,93,0.28));
+
+  a.logo {
+    float: left;
+    margin-right:25px;
+  }
+
+  nav ul.level1 {
+    display: none;
+  }
+
+  nav ul li {
+    float: left;
+    margin: 10px 0;
+    padding: 0 15px;
+    font-family: Arial;
+    font-size: 20px;
+    position: relative;
+    color: @baselink;
+    &:hover {
+      cursor: pointer;
+    }
+
+    &:after {
+      content: "";
+      border-right: 2px solid @baselink;
+      opacity: 0.6;
+      position: absolute;
+      right: 0;
+      top: 5px;
+      width: 0;
+      height: 15px;
+    }
+
+    &:last-child:after {
+      border: none;
+    }
+
+    .level1 {
+      position: absolute;
+
+
+      li {
+        font-style: italic;
+        margin-top: 5px;
+        &:first-child {
+          padding-left: 0;
+        }
+
+      }
+    }
+
+    &.hover {
+      .level1 {
+        display: block;
+      }
+    }
+
+  }
+
+
+}

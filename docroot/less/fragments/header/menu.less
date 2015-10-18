@@ -1,0 +1,397 @@
+.nav[data-fragment="header/menu"] {
+
+    display: block;
+    float: left;
+    background-color: #fff;
+    width:100%;
+
+//    border-right: 1px solid @hueck-form-grey;
+//    @media( min-width: @screen-md ){
+//        border-right: 0 none;
+//    }
+
+    h3 {
+        font-size: 25px;
+        margin: 5px 0;
+        padding: 0 @header-padding;
+        overflow: hidden;
+        .glyphicon {
+            font-size: 4.4em;
+            line-height: 0;
+        }
+    }
+
+    > ul {
+
+        list-style: none;
+        margin: 0;
+        //padding: 10px 0 20px;
+        padding: 13px 0 17px;
+        float: left;
+        border-top: 1px solid @hueck-form-grey;
+        &:first-child {
+            border-top: 0 none;
+        }
+
+        &.menuPrimary {
+            border-top: 0 none;
+            //.transition(max-height 300ms ease-in-out);
+        }
+
+        &.menuLink {
+            small {
+                font-size: 13px;
+                vertical-align: top;
+            }
+            a {
+                font-size: 13px;
+                line-height: 1;
+            }
+            .link {
+                .document {
+                    white-space: nowrap;
+                }
+                .no-link, .no-link span {
+                    text-decoration: none;
+                    cursor: default;
+                    color: @hueck-black;
+                }
+            }
+        }
+
+        &.menuLogin {
+            border-top: 0 none;
+            .field {
+                width: 100%;
+            }
+        }
+
+        &.close {
+            max-height: 0;
+            overflow: hidden;
+            padding-bottom: 0;
+//            max-height: 0;
+//            overflow: hidden;
+//            .transition( max-height 600ms ease-in-out );
+        }
+        &.open {
+//            height: auto;
+//            max-height: 300px;
+        }
+
+        &.menuLoginButton {
+            display: none;
+            > li {
+                padding: 0.3em 0 0.1em @header-padding;
+                > a {
+                    display: table;
+                    width: 100%;
+                    h3 {
+                        font-size: 18px;
+                        margin: 5px 0 0;
+                        padding: 0;
+                        .glyphicon {
+                            font-size: 4.35em;
+                            padding: 0;
+                        }
+                    }
+                    span {
+                        text-decoration: none;
+                        color: @hueck-blue;
+                        &.text {
+                            display: table-cell;
+                            width: 80%;
+                            text-align: right;
+                        }
+                        &.glyphicon-arrow-right {
+                            display: table-cell;
+                            width: 20%;
+                            text-align: left;
+                            &:before {
+                                font-size: 1.25em;
+                                line-height: 1.25em;
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+
+        > li {
+            width: @header-width;
+            text-align: right;
+            padding: 0.3em @header-padding 0.1em @header-padding;
+            > a {
+                text-decoration: none;
+
+                span {
+                    line-height: 1em;
+                    margin: 0;
+                    vertical-align: middle;
+                    text-decoration: underline;
+                    > span {
+                        text-decoration: none;
+                        vertical-align: baseline;
+                    }
+                    &.glyphicon {
+                        text-decoration: none;
+                        font-size: 1.25em;
+                        padding: 0 0.25em 0 0;
+
+                      &.glyphicon-cart-filled {
+                        color: @hueck-green;
+                      }
+                      &.glyphicon-cart-filled + span {
+                        color: @hueck-green;
+                      }
+                    }
+
+                }
+                &:focus, &.focus {
+                    color: @hueck-blue;
+                }
+                &:visited, &.visited {
+                    color: @hueck-blue;
+                    &:hover, &.hover {
+                        color: @hueck-menu-hover;
+                    }
+                }
+
+              &:hover, &.hover {  // mst Farbe ändern für Basti
+                color: @hueck-menu-hover ;
+              }
+            }
+
+            h3 {
+                font-size: 25px;
+                margin: 5px 0 15px;
+                overflow: hidden;
+                .glyphicon {
+                    font-size: 4.35em;
+                    line-height: 0;
+                }
+            }
+
+            .form-group {
+                margin-bottom: 2px;
+            }
+
+            .btn {
+                margin: 0.5em 0;
+                span {
+                    text-decoration: none;
+                }
+            }
+
+            &.link {
+                > a {
+                    padding: 0 0 0 0.25em;
+                    &:first-child {
+                        padding: 0;
+                    }
+                }
+            }
+
+            &.text {
+                small {
+                    float: right;
+                    line-height: 1.1em;
+                    padding: 0 0 1em;
+                }
+            }
+
+            &.menu {
+                padding: 0.3em 0 0 @header-padding;
+                > a {
+                    display: table;
+                    text-decoration: none;
+                    height: 100%;
+                    padding: 0.25em 0;
+                    width: 100%;
+
+                    span {
+                        display: table-cell;
+                        .font-eurofurence();
+                        font-size: @font-size-menu;
+                        text-decoration: none;
+
+                        &.text {
+                            width: 80%;
+                            text-align: right;
+                        }
+                        &.glyphicon-arrow-right {
+                            width: 20%;
+                            text-align: left;
+                            &:before {
+                                font-size: 1.25em;
+                                line-height: 1.25em;
+                            }
+                        }
+                    }
+
+                }
+
+                //&:hover,
+                &.hover,
+                &.show {
+                    > a {
+                        span {
+                            color: @hueck-white;
+                        }
+                        background-color: @hueck-menu-hover;
+
+                        &:focus {
+                            outline: 0;
+                        }
+                    }
+                }
+                &.active {
+                    > a {
+                        span {
+                            color: @hueck-black;
+                        }
+                        background-color: @hueck-menu-active;
+                        &:focus {
+                            outline: 0;
+                        }
+                    }
+                    //&:hover,
+                    &.hover {
+                        > a {
+                            span {
+                                color: @hueck-white;
+                            }
+                            background-color: @hueck-menu-hover;
+                        }
+                    }
+                }
+            }
+
+        }
+
+        &.no-margin {
+            margin: -10px 0 17px;
+            padding: 0;
+            background: none repeat scroll 0 0 transparent;
+            > li {
+                float: left;
+                .btn {
+                    margin: 0;
+                }
+            }
+        }
+
+    }
+
+    .menuLoggedIn {
+        border-top: 0 none;
+        display: none;
+
+        &.accordion[data-fragment="accordion"] {
+
+            h3 {
+                overflow: hidden;
+            }
+
+            border-top: 1px solid @hueck-form-grey;
+            padding: 13px 0 0;
+
+            .toggle {
+                margin: 3px 10px 0;
+            }
+        }
+    }
+
+    .title {
+        float: left;
+        border-top: 1px solid @hueck-form-grey;
+        padding: 13px 0 0;
+        min-width: 100%;
+        text-align: right;
+        h3 {
+            font-size: 21px;
+            margin: 5px 0 0;
+        }
+    }
+
+    .accordion[data-fragment="accordion"] {
+        float: left;
+        width: 100%;
+        .toggle {
+            display: none;
+            margin: 40px 10px 0;
+            padding: 0;
+            width: 25px;
+            height: 25px;
+            line-height: 1;
+            min-height: 25px;
+            &:before {
+                line-height: 1em;
+                padding: 0 0 0 8px;
+                position: relative;
+                text-align: center;
+            }
+        }
+
+        .tooltip[data-asset="tooltip"] {
+            left: 42px;
+            top: 17px;
+        }
+        &.menuLoggedIn {
+            .tooltip[data-asset="tooltip"] {
+                top: -6px;
+            }
+        }
+
+        &.close:hover {
+            .tooltip[data-asset="tooltip"] {
+                display: block;
+            }
+        }
+
+    }
+
+    &.loggedIn {
+        .menuLoginButton {
+            display: none !important;
+        }
+        .menuLogin {
+            display: none !important;
+        }
+        .menuLoggedIn {
+            display: block !important;
+        }
+        .accordion[data-fragment="accordion"] {
+            &.menuLoggedIn {
+                h3 {
+                    float: left;
+                    margin: 5px 0;
+                    padding: 0;
+                    font-size: 25px;
+                    line-height: 20px;
+                    text-align: right;
+                    min-width: 150px;
+                    max-width: 150px;
+                }
+            }
+            .toggle {
+                display: inline-block;
+            }
+        }
+
+    }
+
+    .smallSize & {
+
+        .menuLogin {
+            display: none;
+        }
+        .menuLoginButton {
+            display: block;
+        }
+
+    }
+
+
+}

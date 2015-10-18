@@ -1,0 +1,39 @@
+{
+    "page": {
+        "basePath": "../",
+        "title": "GewinnMAX - Unternehmensberatung",
+        "head": {
+            "description": "description",
+            "keywords": "keywords"
+        },
+        "content": {
+
+            "teaser-text": [
+                {
+                    "flag" : {
+                        "content" : "Über uns"
+                    },
+                    "headline": "Wir beraten und betreuen",
+                    "text" : "GewinnMax beschäftigt sich mit der der Beratung von Firmen und privaten Haushalten. Unternehmen und private Haushalte wollen Kosten senken und Gewinne erhöhen. Wir sind die Unternehmensberater für Firmen und private Haushalte. Die Aufgabe unserer Spezialisten ist die Senkung der laufenden Kosten, effizienterer Einsatz der finanziellen Mittel und die Erhöhung der Einnahmen.",
+                    "link": "Erfahren Sie mehr"
+                },
+                {
+                    "flag" : {
+                        "content" : "Für Firmen"
+                    },
+                    "headline": "Beratung mit Coaching und System",
+                    "text" : "Bei der Unternehmensberatung haben wir uns auf kleine Unternehmen spezialisiert. Sie sind Chef und  haben gerade Ihre Selbständigkeit begonnen oder führen ein erfolgreiches kleines Unternehmen?  ",
+                    "link": "Dann sind Sie hier richtig!"
+                },
+                {
+                    "flag" : {
+                        "content" : "Für private Haushalte"
+                    },
+                    "headline": "Wir haben für Sie den Durchblick",
+                    "text" : "Private Haushalte funktionieren wie ein Unternehmen, darum beraten wir sie auch so. Wir setzen Ihr Geld nach Ihren individuellen Zielen ein",
+                    "link": "Erfahren Sie mehr"
+                }
+            ]
+        }
+    }
+}

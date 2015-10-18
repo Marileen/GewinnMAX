@@ -1,0 +1,64 @@
+body {
+
+    &.tilt {
+        .transform(rotate(1deg));
+
+        h1, h2, h3, h4, h5, a {
+            animation: blink 1s steps(5, start) infinite;
+            -webkit-animation: blink 1s steps(5, start) infinite;
+        }
+        @keyframes blink {
+            to {
+                visibility: hidden;
+            }
+        }
+        @-webkit-keyframes blink {
+            to {
+                visibility: hidden;
+            }
+        }
+    }
+
+    &.flip {
+        .transform(scaleX(-1));
+    }
+
+    &.flame {
+
+        .context[data-module="context"],
+        .nav[data-fragment="header/menu"],
+        .content[data-module="content"],
+        .footer[data-module="footer"] {
+            background-color: transparent;
+        }
+
+        .content[data-module="content"] {
+            h1, h2, h3, h4, h5 {
+                color: #000000;
+                animation: flames 1s ease-in-out infinite alternate;
+                -webkit-animation: flames 1s ease-in-out infinite alternate;
+            }
+        }
+
+        @keyframes flames {
+            0% { color: #ff0000; text-shadow: 0 0 1px #ff0000, 0 1px 1px #ffff00; }
+            100% { color: #000000; text-shadow: 0 -3px 10px #ff0000, 0 -3px 5px #ffff00; }
+        }
+        @-webkit-keyframes flames {
+            0% { color: #ff0000; text-shadow: 0 0 1px #ff0000, 0 1px 1px #ffff00; }
+            100% { color: #000000; text-shadow: 0 -3px 10px #ff0000, 0 -3px 5px #ffff00; }
+        }
+    }
+
+    &.anaglyph {
+        .content[data-module="content"] {
+            h1, h2, h3, h4, h5, p, a {
+                color: #000 !important;
+                text-shadow: -2px 0 0 #ff0000, -1px 0 0 #ffff00, 2px 0 0 #00ffff, 1px 0 0 #00ff00;
+            }
+        }
+    }
+
+}
+
+

@@ -1,0 +1,189 @@
+.teaser[data-fragment="teaser"] {
+
+    position: relative;
+    width: 100%;
+    margin: 0 0 25px;
+    .transition(min-height 300ms ease-in-out);
+
+    strong.bigger {
+        font-size: 120%;
+    }
+
+    > a {
+        text-decoration: none;
+        &:hover, &.hover, &:focus, &.focus, &:active, &.active, &:visited, &.visited {
+            text-decoration: none;
+            color: inherit;
+        }
+    }
+
+    &:hover {
+        background: @button-white-bg-hover;
+        cursor: pointer;
+    }
+
+    .content {
+        position: relative;
+        z-index: 10;
+        .transition(margin 300ms ease-in-out);
+        ul {
+            li {
+                position: relative;
+            }
+        }
+    }
+
+    .image {
+        .img {
+            width: 100%;
+        }
+    }
+
+    .layer {
+        display: none;
+    }
+
+    .magnifier[data-fragment="magnifier"] {
+        .glyphicon-magnifier-plus {
+            bottom: 85px;
+            position: absolute;
+            right: -1px;
+            width: 46px;
+        }
+
+        hgroup {
+            position: relative;
+            height: 68px;
+            background-color: @lightbox-headline;
+            display: none;
+            h1, h2, h3 {
+                color: @hueck-white;
+                margin: 0;
+                padding: 12px 0;
+                text-align: left;
+                font-size: 40px;
+                line-height: 1;
+            }
+        }
+
+        &.fullscreen {
+            background-color: @hueck-black;
+            top: 0;
+            left: 0;
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            z-index: 100;
+            text-align: center;
+
+            .glyphicon-magnifier-plus {
+                display: none;
+            }
+
+            .glyphicon-close[data-element="closeButton"] {
+                position: absolute;
+                right: 0;
+                top: 0;
+                display: block;
+            }
+
+            hgroup {
+                display: block;
+            }
+
+            .image[data-asset="image"] {
+                height: 100%;
+                width: 100%;
+                vertical-align: middle;
+                img {
+                    height: 100%;
+                    width: auto;
+                    vertical-align: middle;
+                }
+            }
+
+        }
+    }
+
+
+
+    &.default {
+        //background-color: @hueck-white;
+        border: solid 1px @hueck-form-grey;
+        .box-shadow(0 2px 2px rgba(0, 0, 0, .15));
+        overflow: hidden;
+
+        .content {
+            padding: @content-grid-padding @content-grid-padding (@content-grid-padding - 9);
+        }
+
+        h2 {
+            font-size: 30px;
+            line-height: 28px;
+            color: @hueck-blue;
+        }
+
+        h1 {
+            font-size: 24px;
+            line-height: 28px;
+            color: @hueck-black;
+        }
+        .text {
+
+        }
+        .button {
+
+            .btn {
+                margin: 0;
+                border: 0 none;
+                box-shadow: none;
+                width: 100%;
+                text-align: left;
+                white-space: normal;
+                padding: 0.75em 0.75em 0.75em 1.75em;
+                height: 85px;
+                display: table;
+
+                &:before {
+                    display: none;
+                }
+                > span {
+                    &.text {
+                        display: table-cell;
+                        text-align: left;
+                        width: 90%;
+                        vertical-align: middle;
+                    }
+                    &.glyphicon-arrow-right {
+                        display: table-cell;
+                        text-align: left;
+                        width: 10%;
+                        &:before {
+                            font-size: 1.5em;
+                        }
+                    }
+                }
+            }
+        }
+        .btn {
+            background: transparent;
+            &.link {
+                line-height: 0;
+                margin: 0;
+                min-height: 0;
+                &:before {
+                    position: static;
+                    line-height: 0.5em;
+                }
+            }
+        }
+        &:hover {
+            background: @button-white-bg-hover;
+            cursor: pointer;
+        }
+    }
+
+
+
+
+}

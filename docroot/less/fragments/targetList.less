@@ -1,0 +1,68 @@
+.targetList[data-fragment="targetList"] {
+
+    padding: @content-grid-padding;
+    width: 100%;
+    float: left;
+    position: relative;
+    
+    ul {
+
+        padding-left: 0;
+
+        li {
+
+            list-style: none;
+            margin-bottom: 25px;
+            &:last-child {
+                margin-bottom: none;
+            }
+
+            a {
+
+                text-decoration: none;
+
+                > span:first-child {
+                    text-decoration: underline;
+                }
+
+                .glyphicon {
+                    font-size: 1.5em;
+                }
+
+                &:visited {
+                    color: @hueck-blue;
+                }
+            }
+        }
+    }
+
+    &:before {
+        border-top: 1px solid @hueck-form-grey;
+        content: "";
+        height: 1px;
+        left: @content-grid-padding;
+        position: absolute;
+        top: 0;
+        width: 715px;
+    }
+    &:after {
+        border-top: 1px solid @hueck-form-grey;
+        content: "";
+        height: 1px;
+        left: @content-grid-padding;
+        position: absolute;
+        bottom: 31px; //35px;
+        width: 715px;
+    }
+
+    .no-border & {
+        padding: 0 0 0 10px;
+        &:before, &:after {
+            border-top: 0 solid;
+        }
+        ul li {
+            margin-bottom: 15px;
+        }
+    }
+
+}

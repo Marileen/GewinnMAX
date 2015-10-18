@@ -1,0 +1,16 @@
+body {
+    -webkit-backface-visibility: hidden;
+}
+
+.anim8y( @duration: 1000ms ){
+    .anim8y {
+        -webkit-animation-duration: @duration;
+        -moz-animation-duration: @duration;
+        -o-animation-duration: @duration;
+        animation-duration: @duration;
+        -webkit-animation-fill-mode: both;
+        -moz-animation-fill-mode: both;
+        -o-animation-fill-mode: both;
+        animation-fill-mode: both;
+    }
+}

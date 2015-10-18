@@ -1,0 +1,161 @@
+body {
+    .font-arial();
+    color: @hueck-black;
+    -ms-overflow-style: scrollbar;
+}
+
+// --------------------------------------------------
+h1, h2, h3, h4, h5, h6 {
+    //font-family: @font-family-base;
+    font-family: Folks;
+    font-style: @headings-font-style-base;
+    font-weight: @headings-font-weight-base;
+    font-size: @headings-font-size-base;
+    letter-spacing: @headings-letter-spacing;
+    line-height: @headings-line-height-base;
+    color: @headline;
+    margin: @headings-margin-h4;
+    position: relative;
+    text-transform: uppercase;
+    a {
+        text-decoration: none;
+        &:visited, &.visited {
+            color: @hueck-blue;
+        }
+        &:hover, &.hover {
+            text-decoration: none;
+        }
+    }
+}
+
+h1 {
+    font-family: Folks;
+    font-size: 40px;
+    font-weight: normal;
+    margin: @headings-margin-h1;
+}
+
+h2 {
+    font-family: Folks;
+    font-size: 30px;
+    line-height: 1.2em ;
+    font-weight: normal;
+    margin: @headings-margin-h2;
+    strong {
+        font-family: @family-eurofurence-bold;
+        font-weight: @font-weight-base;
+    }
+}
+
+h3 {
+    font-family: Folks;
+    font-size: 22px;
+    color: @baselink;
+    text-transform: none;
+    font-weight: bold;
+    margin: @headings-margin-h3;
+    strong {
+        font-family: @family-eurofurence-bold;
+        font-weight: @font-weight-base;
+    }
+}
+
+h4 {
+    font-size: @headings-font-size-h4;
+    margin: @headings-margin-h4;
+    color: @hueck-black;
+}
+
+// --------------------------------------------------
+
+p {
+    margin: @text-margin-base;
+    letter-spacing: @text-letter-spacing;
+}
+
+a {
+    text-decoration: underline;
+    color: @baselink;
+  text-decoration: none;
+    &:hover, &.hover {
+        color: @activelink;
+        text-decoration: none;
+    }
+    &:focus, &.focus {
+        color: @activelink;
+        text-decoration: none;
+    }
+    &:visited, &.visited {
+        color: @baselink;
+        text-decoration: none;
+        &:hover, &.hover {
+            color: @activelink;
+            text-decoration: none;
+        }
+    }
+}
+
+small, .small {
+    font-size: 13px;
+}
+
+.smaller {
+    line-height: 2em;
+    font-size: 65%;
+}
+
+ul {
+    margin: 0 0 1em;
+    padding: 0;
+    position: relative;
+    list-style: none outside none;
+}
+
+.text-warning, .text-danger {
+    color: @hueck-red;
+    &:hover {
+        color: darken(@hueck-red, 10%);
+    }
+}
+.text-success {
+    color: @hueck-green;
+    &:hover {
+        color: darken(@hueck-green, 10%);
+    }
+}
+.text-info {
+    color: @hueck-blue;
+    &:hover {
+        color: darken(@hueck-blue, 10%);
+    }
+}
+
+.blue {
+    color: @hueck-blue;
+}
+
+.black {
+    color: @hueck-black;
+}
+
+.nowrap {
+    white-space: nowrap;
+}
+
+
+// --------------------------------------------------
+
+.glyphicon {
+    vertical-align: middle;
+    &.glyphicon-hueck {
+        line-height: 0;
+        font-size: 2.5em;
+        &.headline {
+            font-size: 4.3em;
+        }
+    }
+    &.text-icon {
+        font-size: 1.5em;
+        padding: 0 0.5em 0 0;
+    }
+}

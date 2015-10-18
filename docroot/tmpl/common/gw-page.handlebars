@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>  <html class="no-js ie ie6 lte9 lte8 lte7"> <![endif]-->
+<!--[if IE 7]>     <html class="no-js ie ie7 lte9 lte8 lte7"> <![endif]-->
+<!--[if IE 8]>     <html class="no-js ie ie8 lte9 lte8"> <![endif]-->
+<!--[if IE 9]>     <html class="no-js ie ie9 lte9"> <![endif]-->
+<!--[if gt IE 9]>  <html class="no-js ie gt-ie9"><![endif]-->
+<!--[if !IE]><!--> <html class="no-js"><!--<![endif]-->
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+    <!--<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1" />-->
+    <meta name="viewport" content="width=1024" />
+    <!--<meta name="viewport" content="initial-scale=1">-->
+    <!--<meta name="viewport" content="width=1024, initial-scale=1,maximum-scale=1">-->
+    <!--<meta name="viewport" content="width=device-width, user-scalable=no">-->
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <meta name="author" content="{{author}}">
+    <meta name="description" content="{{page.head.description}}">
+    <meta name="keywords" content="{{page.head.keywords}}">
+
+    {{> "common/head/socialmedia" page.head.socialmedia}}
+
+    <base href="/_release/" />
+    <!--<base href="/" />-->
+
+    <title>{{page.title}}</title>
+
+    <!--[if lte IE 8]>
+        <script src="{{page.basePath}}_release/js/polyfills_IE8.js"></script>
+    <![endif]-->
+
+    <!--[if lte IE 9]>
+        <script src="{{page.basePath}}_release/js/polyfills_IE9.js"></script>
+    <![endif]-->
+
+    {{{common "head/link" basePath=page.basePath}}}
+</head>
+<body>
+
+{{{common "gw-header"}}}
+
+<div class="container">
+    {{{content}}}
+</div>
+
+{{{common "gw-footer"}}}
+
+{{{common "head/script" basePath=page.basePath}}}
+
+</body>
+</html>

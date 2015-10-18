@@ -1,0 +1,159 @@
+// schatten
+
+.shadow(@bgcolor : @white, @gradient-color : rgba(0, 0, 0, 0.28)) {
+
+  position: relative;
+
+  &:before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 6px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 8px;
+    left: 0;
+    box-shadow: 0px 10px 4px @gradient-color;
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 10px;
+    bottom: 0;
+    left: 0;
+    background-color: @bgcolor
+  }
+}
+
+// Form Button
+// --------------------------------------------------
+.form-button( @color: @button-white-text-color, @borderColor: @button-white-border-color, @backgroundColor: @button-white-bg-base, @backgroundHover: @button-white-bg-hover, @backgroundActive: @button-white-bg-active ) {
+    .box-shadow( 0 2px 2px rgba(0,0,0,.15) );
+    .border-radius( 0 );
+    border: 1px solid @borderColor;
+    color: @color;
+    .glyphicon-arrow-right();
+    &:before {
+        color: @color;
+        line-height: 1.75em;
+        right: 0.75em;
+    }
+    background-color: @backgroundColor;
+    &:hover, &.hover {
+        color: @color;
+        background-color: @backgroundHover;
+    }
+    &:focus, &.focus, &:active, &.active {
+        color: @color;
+        background-color: @backgroundActive;
+        .box-shadow( 0 2px 2px rgba(0,0,0,.15) );
+    }
+}
+
+// Link Button
+// --------------------------------------------------
+.link-button( @color: @link-color-base, @colorHover: @link-color-hover, @colorActive: @link-color-active ) {
+    background-color: transparent;
+    .box-shadow( 0 0 0 transparent );
+    .border-radius( 0 );
+    border: 0 none;
+    color: @color;
+    &:before {
+        color: @color;
+    }
+    &:hover, &.hover {
+        color: @colorHover;
+    }
+    &:focus, &.focus, &:active, &.active {
+        color: @colorActive;
+    }
+}
+
+// Form Button
+// --------------------------------------------------
+.empty-button( @color: @button-white-text-color, @borderColor: @button-white-border-color, @backgroundColor: @button-white-bg-base, @backgroundHover: @button-white-bg-hover, @backgroundActive: @button-white-bg-active ) {
+    .box-shadow( 0 2px 2px rgba(0,0,0,.15) );
+    .border-radius( 0 );
+    border: 1px solid @borderColor;
+    color: @color;
+    &:before {
+        color: @color;
+        line-height: 1.75em;
+        right: 0.75em;
+    }
+    background-color: @backgroundColor;
+    &:hover, &.hover {
+        color: @color;
+        background-color: @backgroundHover;
+    }
+    &:focus, &.focus, &:active, &.active {
+        color: @color;
+        background-color: @backgroundActive;
+        .box-shadow( 0 2px 2px rgba(0,0,0,.15) );
+    }
+}
+
+// Placeholder text
+.placeholderStyle(@color: @input-color-placeholder) {
+    &:-moz-placeholder { color: @color; font-style: italic; }
+    &::-moz-placeholder { color: @color; font-style: italic; opacity: 1; }
+    &:-ms-input-placeholder { color: @color; font-style: italic; }
+    &::-webkit-input-placeholder  { color: @color; font-style: italic; }
+}
+
+
+// Input Field
+// --------------------------------------------------
+.input-field( @color: @input-text-color-base, @placeholder: @input-placeholder-color-base, @borderColor: @input-border-base, @backgroundColor: @input-bg-base, @backgroundHover: @input-bg-base, @backgroundActive: @input-bg-base ) {
+    .box-shadow( inset 0 2px 3px rgba(0,0,0,.15) );
+    .border-radius( 0 );
+    border: 1px solid @borderColor;
+    color: @color;
+    .placeholderStyle( @placeholder );
+    background-color: @backgroundColor;
+    &:hover, &.hover {
+        color: @color;
+        background-color: @backgroundHover;
+    }
+    &:focus, &.focus, &:active, &.active {
+        color: @color;
+        background-color: @backgroundActive;
+        border: 1px solid @hueck-form-blue;
+        .box-shadow( inset 0 2px 3px rgba(0,0,0,.15) );
+    }
+}
+
+
+// Hueck Content Grid
+// --------------------------------------------------
+.makeContentGridColums(@grid-colums: 9){
+    @max: @grid-colums + 1;
+    .makeGridLoop(@index) when (@index < @max){
+        &.col-@{index} {
+            width: (@index * @content-grid-width) + ((@index - 1) * @content-grid-padding);
+            margin-left: 25px;
+
+            &:first-child {
+              margin-left: 0;
+            }
+        }
+        .makeGridLoop(@index + 1);
+    };
+    .makeGridLoop(1);
+}
+
+
+// Hueck Mega-Menu Grid
+// --------------------------------------------------
+.makeMegamenuGridColums(@grid-colums: 3){
+    @max: @grid-colums + 1;
+    .makeGridLoop(@index) when (@index < @max){
+        &.col-@{index} {
+            width: (@index * (@megamenu-grid-width + @megamenu-grid-padding) + ((@index - 1) * @megamenu-grid-padding));
+        }
+        .makeGridLoop(@index + 1);
+    };
+    .makeGridLoop(1);
+}

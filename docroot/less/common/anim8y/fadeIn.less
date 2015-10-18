@@ -1,0 +1,46 @@
+.fadeIn( @from: 0, @to: 1 ) {
+
+    @-webkit-keyframes fadeIn {
+        0% {
+            opacity: @from;
+        }
+        100% {
+            opacity: @to;
+        }
+    }
+
+    @-moz-keyframes fadeIn {
+        0% {
+            opacity: @from;
+        }
+        100% {
+            opacity: @to;
+        }
+    }
+
+    @-o-keyframes fadeIn {
+        0% {
+            opacity: @from;
+        }
+        100% {
+            opacity: @to;
+        }
+    }
+
+    @keyframes fadeIn {
+        0% {
+            opacity: @from;
+        }
+        100% {
+            opacity: @to;
+        }
+    }
+
+    .fadeIn {
+        -webkit-animation-name: fadeIn;
+        -moz-animation-name: fadeIn;
+        -o-animation-name: fadeIn;
+        animation-name: fadeIn;
+    }
+
+}

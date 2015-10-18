@@ -1,0 +1,24 @@
+<div class="component controller play-me{{#if class}} {{class}}{{/if}}" data-component="media/video"{{#if auto-resize}} data-auto-resize="true"{{/if}} data-controller="media/Video" id="test">
+    <video class="normal" width="100%" height="100%" preload="preload" >
+        {{#each sources}}
+            <source src="{{url}}" type="video/{{type}}" media="all
+                    {{#if max-width}}
+                        and (max-device-width:{{max-width}}px)
+                        {{#if retina}}
+                            and (-webkit-min-device-pixel-ratio: 1.5)
+                        {{else}}
+                            and (-webkit-max-device-pixel-ratio: 1.5)
+                        {{/if}}
+            {{/if}}
+            "/>
+        {{/each}}
+    </video>
+    <div class="poster">
+        {{> "components/picture" this.poster}}
+        <img class="loading" src="../../_resources/bower/mediaelement/build/loading.gif"/>
+
+        <div class="play">
+            <img src="../../_resources/bower/mediaelement/build/bigplay.png"/>
+        </div>
+    </div>
+</div>

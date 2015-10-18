@@ -1,0 +1,43 @@
+<div class="login" data-module="form/login">
+
+    <form class="form controller" data-module="form" data-controller="fragments/Form" action="#login" method="POST">
+
+        <div class="textblock" data-fragment="textblock">
+            <hgroup>
+                <h3>{{headline}}</h3>
+            </hgroup>
+            <div class="content">
+                {{{description}}}
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group {{#if email.message.show}}has-{{email.message.type}}{{/if}}">
+                {{>fragments/form/input email}}
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group {{#if passwort.message.show}}has-{{passwort.message.type}}{{/if}}">
+                {{>fragments/form/input passwort}}
+            </div>
+        </div>
+
+        <div class="form-row button-row">
+            <div class="form-group">
+                <a class="btn form-link left" href="#">Passwort vergessen</a>
+                <button class="btn btn-blue right" type="submit" value="submit"><span>Login</span></button>
+            </div>
+        </div>
+
+    </form>
+
+    <div class="teaser">
+        <div class="row">
+            <div class="col col-9">
+                {{>fragments/teaser teaserTextImageRight2}}
+            </div>
+        </div>
+    </div>
+
+</div>

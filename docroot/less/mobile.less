@@ -1,0 +1,490 @@
+@spacing: 		12px;
+@spacingThin: 	8px;
+@spacingWide:	20px;
+
+@import (inline) "../_resources/bower/slick.js/slick/slick.scss";
+
+/* The mobile page works completely in the mobile DIV
+ * This way we ensure that even the mobile site is loaded to a bigger screen by accident the css does not crash
+ * NOTE: This solution is temporary until the new mobile version comes in  */
+
+div.mobile {
+
+	padding: @spacing;
+
+	/* # types */
+
+	/* ## links */
+	
+	a,
+	a:visited,
+	input[type=submit] {
+		color: @hueck-blue;
+		text-decoration: none;
+	}
+	
+	a:active,
+	a:hover {
+		color: @hueck-black;
+	}
+	
+	/* linkHull shall emulate the hull appearance of a link. The font color is changed further below.  */
+	a.nav,
+	a.nav:visited,
+	div.file a,
+	input[type=submit],
+	.linkHull {
+		background-color: @hueck-lightgrey;
+		border: 1px @hueck-teaser-grey solid;
+		clear: both;
+		display: block;
+		margin: 0 auto;
+		margin-bottom: @spacing;
+		margin-top: @spacing;
+		padding: @spacingThin;
+		text-align: center;
+		text-decoration: none;
+		width: 100%;
+		
+		.glyphicon {
+			font-size: 150%;
+            float: right;
+            line-height: 18px;   /* hier ist eine line-eingfügt, da sonst der Pfeil vertikal zu weit unten sitzt */
+		}
+	}
+
+    .order[data-module="order"] {
+      padding: 0;
+      width: 99%;
+    }
+
+    /* In der Anzeige-Box wenn keine Bestellungen gefunden worden ist rechts ein großes Icon */
+    /* daher hier rechts für das p padding hinzugefügt, damit der Text nach rechts nicht über das Icon läuft */
+    p.empty-order {
+      padding-right: 50px;
+    }
+	
+	a.nav:active,
+	a.nav:hover {
+		background-color: @hueck-blue;
+		color: #fff;
+	}
+
+	div.controller {
+		padding: 0px;
+	}
+
+	h1, h2, h3, h4, h5, h6 {
+		clear: both;
+	}
+	
+	img {
+		margin: @spacingWide 0 @spacingWide 0;
+		width: 100%;
+	}
+
+    // HUECK-345
+    img.newCaptcha {
+        width: auto !important;
+        margin: 9px 0 !important;
+    }
+
+	/* # classes */
+
+	.detail {
+		
+		h6 {
+			margin-bottom: @spacing;
+			margin-top: @spacing;
+		}
+		
+		table {
+			width: 100%;
+		}
+		
+		table td:first-child {
+		}
+		
+		table td:last-child {
+			padding-left: @spacing;
+		}
+		
+		table.headTable td:last-child {
+			.font-arial-bold( @hueck-black );
+		}
+		
+		td {
+			padding: 6px 0 6px 0;
+			vertical-align: top;
+		}
+		
+		tr.border {
+				border-top: 1px @hueck-black solid;
+				height: 0px;
+		}
+	}
+
+	.fullWidth {
+		text-align: left;
+		width: 100%;
+	}
+
+	/* ## glyphicons */
+	.glyphicon-okay {
+		color: @hueck-green;
+	}
+
+	.glyphicon-error {
+		color: @hueck-red;
+	}
+
+    .header {
+		
+		a.glyphicon-hueck {
+			background-color: transparent;
+			border: none;
+			color: @hueck-blue;
+			display: inline;
+			float: right;
+			font-size: 90px;
+			line-height: 0.2;
+			margin: 0;
+			vertical-align: middle;
+			width: auto;
+		}
+		
+		.headline {
+			display: inline-block;
+			vertical-align: top;
+			line-height: 1.0;
+			max-width: 62%;
+		}
+	}
+	
+	.footer {
+        border-top: 1px @hueck-grey solid;
+		clear: both;
+		margin-top: @spacingWide;
+		text-align: center;
+		
+		a {
+		    margin: 0 @spacingThin 0 @spacingThin;
+		}
+	}
+	
+	.linkHull {
+		color: @hueck-black;
+	}
+	
+	.materialOverview {
+
+		
+		.detail table tr.border:first-child {
+			border-top: none;
+		}
+
+		.lIcon {
+			text-align: right;
+			//width: 4%;
+		}
+	}
+
+    /* Breite der beiden Spalten (Position und Material) ergeben hier nicht 100%, */
+    /* da rechts noch ein Icon ist, welches sonst in Mobile Browsern nicht mehr mit in die Zeile passt*/
+    .pos { width: 25%; }
+    .material { width: 60%; }
+
+    a.nav {
+      span {
+        display: inline-block;
+      }
+    }
+
+    .table-inner small {
+      width: 100%;
+    }
+
+    .order[data-module="order"] .list .order-item .table-footer .table-toggle .table-show,
+    .order[data-module="order"] .list .order-item .table-footer .table-toggle .table-hide {
+      display: block;
+    }
+
+    .order[data-module="order"] .list .order-item .table-inner {
+      display: none;
+    }
+
+    .order[data-module="order"] .list .order-item.show-inner-table .table-inner {
+      display: block;
+    }
+
+	
+	/* Overview of orders */
+	a.nav .orderOverview {
+		font-size: 22px;
+		margin-top: @spacing;
+		text-align: left;
+		
+		h4 {
+			display: inline;
+			font-size: @font-size-smaller;
+			margin: 12px 0 8px 0;
+		}
+		
+		.glyphicon {
+			float: right;
+			font-size: 48px;
+            position: relative;
+
+          &:before {
+            top: -11px;
+            position: absolute;
+            right: 0;
+          }
+		}	
+	}
+
+    .order[data-module="order"] .list .order-item .table-inner.small {
+      font-size: 15px;
+    }
+
+    .order[data-module="order"] .list .order-item .table-inner.small table {
+      font-size: 14px;
+    }
+
+    .order[data-module="order"] .list .order-item .table-message .message[data-fragment="message"] {
+      margin: 0;
+      border:1px solid @hueck-blue;
+    }
+
+    .order[data-module="order"] .list .order-item .table-message .message[data-fragment="message"] .questionmark[data-fragment="questionmark"] {
+      right: 25px;
+    }
+
+   .order-item.show-inner-table {
+     .btn.table-toggle:before {
+       content: '\e603';
+     }
+   }
+
+
+	/* The top info about ordering in "Material Uebersicht" */
+	.orderTopInfo {
+		border: 1px solid @hueck-blue;
+        border-top:none;
+		margin-bottom: @spacing *2;
+		padding: @spacingThin;
+		
+		.glyphicon {
+			font-size: 24px;
+		}
+	}
+	
+	.orderTopInfo.okay {
+		border-color: @hueck-green;
+		color: @hueck-green;
+	}
+	
+	.orderTopInfo.caution {
+		border-color: @hueck-blue;
+		color: @hueck-blue;
+	}
+	
+	.orderTopInfo.error {
+		border-color: @hueck-red;
+		color: @hueck-red;
+	}
+	
+	/* should be "normal" */
+	.phoneNumber {
+		background-color: transparent;
+		border: none;
+	    font-size: @font-size-mega;
+	    text-align: center;
+	    
+	    .hint {
+	        font-size: @font-size-smaller;
+	    }
+	}
+	
+	.textContent {
+		clear: both;
+		margin: @spacing 0 @spacing 0;
+	}
+	
+	/* form stuff >>> */
+	
+	form {
+		
+		div.file a {
+			-webkit-box-shadow: none;
+			-moz-box-shadow: none;
+			box-shadow: none;
+			color: @hueck-blue;
+			
+			padding-top: 10px;
+			vertical-align: middle;
+			
+			&:before {
+				color: @hueck-blue;
+			}
+		}
+		
+		.progress-bar {
+			display: none;
+		}
+		
+		.btn.btn-white {
+			background-color: transparent;
+			border: none;
+			
+			-webkit-box-shadow: none;
+			-moz-box-shadow: none;
+			box-shadow: none;
+			
+			&:after {
+				height: 30px;
+				width: 30px;
+			}
+		}
+		.btn.btn-white:before {
+			display: none;
+		}
+		
+		div.file .item {
+			
+			height: auto;
+			
+			a {
+				background-color: transparent;
+				border: none;
+				color: @hueck-blue;
+				display: inline;
+				margin-left: @spacingWide;
+				font-size: 32px;
+			}
+		}
+	
+		&[data-module="form"] .captcha {
+			.field {
+				width: 60%;
+			}
+			.image {
+				width: 40%;
+			}
+			
+		}
+		
+		.form-group {
+			
+			.field {
+				display: block;
+				width: 100%;
+			}
+			
+			.field[data-type="radio"] {
+				display: inline;
+				width: 25%;
+			}
+			
+			.message[data-fragment="message"] {
+				display: none;
+			}
+		}
+	
+	}
+	
+	.error {
+		color: @hueck-form-red;
+	}
+	
+	.error input {
+		border-color: @hueck-form-red;
+	}
+	
+	.error.errorMsg {
+		font-size: @font-size-smaller;
+	}
+	/* <<< form stuff */
+	
+	/* slider stuff >>> */
+	
+	.sliderElement {
+		padding: 0px;
+		margin: 0px;
+		width: 400px;
+	}
+	
+	/* this value should be adaptes when enabling dots */
+	.slick-slider {
+		margin-bottom: @spacing;
+	}
+	
+	.slick-next,
+	.slick-prev {
+		background-color: @hueck-transparent-grey;
+		color: @hueck-white;
+		height: 32px;
+		width: 32px;
+		
+		&:before {
+			font-size: 32px;
+		}
+		
+		&:hover {
+			background-color: @hueck-transparent-grey-hover;
+		}
+	}
+	
+	.slick-prev {
+		margin-left: 32px;
+	}
+	
+	.slick-next {
+		margin-right: 32px;
+	}
+	
+	.slick-dots {
+		display: inline !important;
+		width: 100%;
+		
+		li {
+			background-color: @hueck-grey;
+			height: 8px;
+			width: 8px;
+			display: inline-block;
+			margin: 0 5px 0 5px;
+		}
+		
+		li.slick-active {
+			background-color: @hueck-blue;
+		}
+
+		button {
+			display: none;
+		}
+	}
+
+    //Start HUECK-344
+    .slick-slider .slick-list.draggable {
+        height: 50% !important;
+    }
+
+    @media (min-width : 480px) {
+        .slick-slider .slick-list.draggable {
+            height: 100% !important;
+        }
+    }
+    @media (min-width : 768px) {
+        .slick-slider .slick-list.draggable {
+            height: 50% !important;
+        }
+    }
+    @media (min-width : 992px) {
+        .slick-slider .slick-list.draggable {
+            height: 100% !important;
+        }
+    }
+    //End HUECK-344
+
+	/* <<< slider stuff */
+}

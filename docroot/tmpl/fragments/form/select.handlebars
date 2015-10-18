@@ -1,0 +1,20 @@
+<div class="select">
+    <label for="{{name}}">
+        <div class="label">{{label}}</div>
+        <div class="field controller" data-controller="fragments/form/Select" data-type="select" {{#if submit}}data-submit="{{submit}}"{{/if}}>
+            <select class="form-control" {{#if required}}required{{/if}} name="{{name}}">
+                {{#each option}}
+                    <option value="{{value}}"{{#if selected}} selected="selected"{{/if}}>{{text}}</option>
+                {{/each}}
+            </select>
+        </div>
+        {{#each message}}
+            <div class="message {{type}} {{#if show}}show{{/if}}" data-fragment="message">
+                <div class="icon"></div>
+                <div class="text">
+                    {{{text}}}
+                </div>
+            </div>
+        {{/each}}
+    </label>
+</div>

@@ -1,0 +1,452 @@
+.context[data-module="context"] {
+
+    .lasche {
+        display: none;
+    }
+
+//    .footer-view & {
+//        position: absolute;
+//    }
+
+    @media (max-width : @screen-lg) {
+        left: auto;
+        right: 0;
+        top: 25px;
+        width: @context-width + @context-padding*2;
+        background-color: @hueck-white;
+        border: 1px solid @hueck-form-grey;
+        padding: @context-padding;
+        z-index: 77;
+
+        .transform( translateX(95%));
+        .transition( transform .3s linear, background-color .3s linear );
+        .box-shadow(0px 2px 2px 0px rgba(0, 0, 0, 0.15));
+
+        &.scroll-y, &.scroll-edit {
+            overflow: visible !important;
+            position: absolute;
+            height: auto !important;
+        }
+
+        &:hover {
+            background-color: @hueck-form-lightgrey;
+            .transition( transform 300ms linear, background-color 300ms linear );
+
+            .lasche {
+                background-color: @hueck-form-lightgrey;
+                .transition( background-color .3s linear );
+            }
+        }
+
+        &.open {
+            width: 250px;
+
+            .lasche {
+                &:after {
+                    content: "\e602";
+                }
+            }
+
+            .transform( translateX(0) );
+            .transition( transform .3s linear, background-color .3s linear );
+
+        }
+
+        .inner {
+            min-height: 200px;
+        }
+
+        .lasche {
+
+            transition: background-color .3s linear;
+            cursor: pointer;
+
+            @lWidth : 142px;
+
+            display: block;
+
+            position: absolute;
+            top: 50%;
+            left: 0;
+            margin-top: -@lWidth/2;
+            border: 1px solid @hueck-form-grey;
+            border-width: 0 1px 1px 1px;
+
+            text-align: center;
+            .transform( rotate(90deg) );
+            .transform-origin( top left );
+
+            //width: @lWidth;
+            width: auto;
+            padding: 0 30px;
+            height: 37px;
+            line-height: 37px;
+
+            text-transform: uppercase;
+            font-weight: bold;
+            z-index: 999;
+            color: @hueck-blue;
+            background-color: @hueck-white;
+
+            &:before {
+                font-size: 1.2em;
+                line-height: 1;
+                position: absolute;
+                left: 0.6em;
+                bottom: .5em;
+                font-family: 'HueckIcons';
+                content: "\e615";
+
+                .transform( rotate(90deg) );
+            }
+
+            &:after {
+                font-size: 1.2em;
+                line-height: 1;
+                position: absolute;
+                right: 0.6em;
+                bottom: .5em;
+                font-family: 'HueckIcons';
+                content: "\e603";
+            }
+        }
+    }
+
+    //.wrapper {
+
+    width: @context-width + @context-padding*2;
+    position: fixed;
+    background-color: @hueck-white;
+    top: 0;
+    left: (@header-width + @content-width);
+    right: 0;
+    padding: @context-padding @context-padding 0;
+    z-index: 60;
+    .layer & {
+        z-index: 77;
+    }
+    overflow: visible;
+
+    &.scroll-y, &.scroll-edit {
+        height: 100%;
+        overflow-x: hidden;
+        overflow-y: scroll;
+    }
+
+    .inner {
+        display: block;
+        float: left;
+        border: 1px solid @hueck-form-grey;
+        background-color: @hueck-white;
+        width: 200px;
+
+        > ul {
+            margin: 0;
+            > li {
+                padding: floor(@context-padding / 2) @context-padding floor(@context-padding / 2);
+                float: left;
+                width: 100%;
+
+                border-top: 1px solid @hueck-form-grey;
+                &:first-child {
+                    border-top: none;
+                }
+
+                > h3 {
+                    .font-arial-bold( @hueck-black );
+                    margin: 0 0 0.9em;
+                    &.glyphicon {
+                        padding: 0 0 0 1.25em;
+                        &:before {
+                            position: absolute;
+                            left: 0;
+                        }
+                        &.glyphicon-download {
+                            margin: 0;
+                        }
+                    }
+                }
+
+                h4 {
+                    text-transform: none;
+                }
+
+                &.accordion {
+                    padding: 0;
+                    .btn.toggle {
+                        display: none;
+                        margin: 0;
+                        width: 100%;
+                        border: 0 none;
+                        padding-left: @context-padding;
+                        > span {
+                            float: left;
+                        }
+                    }
+                    .content {
+                        float: left;
+                        width: 100%;
+                        padding-top: 18px;
+                        display: block;
+                        .textblock[data-fragment="textblock"] {
+                            padding: 0 @context-padding 9px;
+
+                            p {
+
+                                display: table;
+                                color: @hueck-blue;
+                                font-family: arial, verdana, sans-serif;
+                                font-size: 0.88em;
+                                margin-bottom: 1.2em;
+
+                                a {
+                                    display: table-cell;
+                                    vertical-align: middle;
+                                    text-align: left;
+                                }
+
+                                span.glyphicon:before {
+                                    color: @hueck-blue;
+                                    font-size: 1.5em;
+                                    display: table-cell;
+                                    vertical-align: middle;
+                                    padding-right: 3px;
+                                }
+
+                                &.document {
+                                    a {
+                                        &.glyphicon-cart-filled:before {
+                                            left: -1px;
+                                            top: -1px;
+                                        }
+                                        &.glyphicon-cart-empty:before {
+                                            left: -3px;
+                                        }
+                                        span {
+                                            float: left;
+                                            font-size: @font-size-smaller;
+                                            line-height: @line-height-smaller;
+                                            padding: 0.15em 0 0 1.75em;
+                                            white-space: normal;
+                                            display: inline-block;
+                                            max-width: 148px;
+                                        }
+                                    }
+                                    &[data-document="unsaved"] {
+                                        .glyphicon-cart-filled {
+                                            display: none;
+                                        }
+                                    }
+                                    &[data-document="saved"],
+                                    &[data-document="basket"] {
+                                        .glyphicon-cart-empty {
+                                            display: none;
+                                        }
+                                    }
+                                    &[data-document="saved"] {
+                                        a, a:before {
+                                            color: @hueck-green;
+                                        }
+                                    }
+                                }
+
+                            }
+
+                        }
+                    }
+                    .open, .close {
+                        .content {
+                            display: block;
+                        }
+                    }
+
+                    .btn.disabled {
+                        cursor: pointer;
+                        opacity: 1;
+                        pointer-events: auto;
+                    }
+                }
+
+                &.teaser {
+                    background: url(../assets/sprites/bg-context.png) top left repeat-y transparent;
+
+                    padding: 30px 10px;
+                    display: inline-block;
+                    float: left;
+                    width: 100%;
+                    max-width: 200px;
+
+                    &.no-border {
+                        background: none;
+                        padding: 0;
+                        border: 0;
+                        .box-shadow(none);
+
+                        .teaser.default[data-fragment="teaser"] {
+                            border: 0;
+                        }
+                    }
+
+                    .teaser[data-fragment="teaser"] {
+
+                        background-color: @hueck-white;
+                        &:hover {
+                            background: @button-white-bg-hover;
+                        }
+                        .box-shadow( 0 2px 2px rgba(0,0,0,.15) );
+                        float: left;
+                        position: relative;
+                        width: 100%;
+
+                        .content {
+                            padding: 10px 10px 0;
+                            .text {
+                                //display: none;  //Urte will das sehen :)
+                            }
+                        }
+
+                        h2, h3 {
+                            color: @hueck-blue;
+                            font-size: 13px;
+                            margin: 0;
+                        }
+
+                        .image {
+                            display: inline-block;
+                            float: left;
+                            padding: 0 10px 10px;
+                            width: 100%;
+                            img {
+                                width: 100%;
+                            }
+                        }
+                        /*
+                        .video-container {
+                            position: relative;
+                            padding-bottom: 56.25%;
+                            padding-top: 30px;
+                            height: 0;
+                            overflow: hidden;
+                        }
+
+                        .video-container iframe,
+                        .video-container object,
+                        .video-container embed {
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 100%;
+                        }
+                        */
+
+                        .video-container {
+                            min-height: 400px;
+                        }
+
+                        .fullscreen {
+                            cursor: default;
+                            .content {
+                                margin: 0 65px 0 0;
+                            }
+                            h2, h3 {
+                                font-size: @headings-font-size-h2;
+                                margin: @headings-margin-h2;
+                                padding: 8px 0 0 14px;
+                                color: @hueck-white;
+                                text-align: left;
+                            }
+                            > .image {
+                                display: none;
+                            }
+                            .text {
+                                display: none;
+                            }
+                            .layer {
+                                width: 100%;
+                                text-align: center;
+                            }
+                        }
+                    }
+
+                }
+
+                .textblock[data-fragment="textblock"] {
+                    hgroup {
+                        padding: 0;
+                    }
+                }
+
+            }
+
+            .info-links li {
+                margin-bottom: 1em;
+
+            }
+        }
+
+        a {
+            &:visited, &.visited {
+                color: @hueck-blue;
+            }
+            &:hover, &.hover {
+                color: @hueck-black;
+            }
+        }
+
+    }
+
+    &.smallSize, &.small {
+
+        .inner {
+            > ul {
+                > li {
+                    &.accordion {
+                        hgroup {
+                            display: none;
+                        }
+                        .btn.toggle {
+                            display: block;
+                        }
+                        .content {
+                            background: url(../assets/sprites/bg-context.png) top left repeat-y transparent;
+                            display: none;
+                        }
+                        .open {
+                            .content {
+                                display: block;
+                            }
+                        }
+                        .close {
+                            .content {
+                                display: none;
+                            }
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+    //}
+
+  .linkToDocs {
+    display: none !important;
+
+    &.show {
+      display: table !important;
+    }
+
+    padding-top: 10px;
+
+    a, a:visited {
+      color: @hueck-green;
+      font-size: 13px;
+
+      &:before {
+        color: @hueck-green;
+      }
+    }
+  }
+
+}

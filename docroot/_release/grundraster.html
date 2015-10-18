@@ -1,0 +1,1932 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>  <html class="no-js ie ie6 lte9 lte8 lte7"> <![endif]-->
+<!--[if IE 7]>     <html class="no-js ie ie7 lte9 lte8 lte7"> <![endif]-->
+<!--[if IE 8]>     <html class="no-js ie ie8 lte9 lte8"> <![endif]-->
+<!--[if IE 9]>     <html class="no-js ie ie9 lte9"> <![endif]-->
+<!--[if gt IE 9]>  <html class="no-js ie gt-ie9"><![endif]-->
+<!--[if !IE]><!--> <html class="no-js"><!--<![endif]-->
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+    <!--<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1" />-->
+    <meta name="viewport" content="width=1024" />
+    <!--<meta name="viewport" content="initial-scale=1">-->
+    <!--<meta name="viewport" content="width=1024, initial-scale=1,maximum-scale=1">-->
+    <!--<meta name="viewport" content="width=device-width, user-scalable=no">-->
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <meta name="author" content="t8y.com gmbh">
+    <meta name="description" content="description">
+    <meta name="keywords" content="keywords">
+
+        <meta property="og:title" content="">
+        <meta property="og:description" content="">
+        <!-- minimum size of preview images. If it's smaller than 200px, the image will be ignored by facebook. -->
+        <meta property="og:image" content="http://">
+        <meta property="og:image:secure_url" content="https://">
+        <meta property="og:image:type" content="image/png">
+        <meta property="og:image:width" content="">
+        <meta property="og:image:height" content="">
+    <title>Hueck - Grundraster</title>
+
+    <!--[if lte IE 8]>
+        <script src="../_release/js/polyfills_IE8.js"></script>
+    <![endif]-->
+
+    <!--[if lte IE 9]>
+        <script src="../_release/js/polyfills_IE9.js"></script>
+    <![endif]-->
+
+    
+    <link rel="shortcut icon" href="../_release/assets/img/icons/favicon.ico" />
+
+    <link rel="apple-touch-icon" sizes="57x57" href="../_release/assets/img/icons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../_release/assets/img/icons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../_release/assets/img/icons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../_release/assets/img/icons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../_release/assets/img/icons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../_release/assets/img/icons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../_release/assets/img/icons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../_release/assets/img/icons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../_release/assets/img/icons/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="../_release/assets/img/icons/favicon-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="../_release/assets/img/icons/favicon-160x160.png" sizes="160x160">
+    <link rel="icon" type="image/png" href="../_release/assets/img/icons/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="../_release/assets/img/icons/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="../_release/assets/img/icons/favicon-32x32.png" sizes="32x32">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="../_release/assets/img/icons/mstile-144x144.png">
+
+    <link href="../_release/css/style_hueck.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+
+<div class="container" data-module="fragments/container">
+    
+    <header class="header topNavOpen controller" data-module="header" data-controller="modules/Header" data-ajax="../data/ajax/empty.html" data-method="POST">
+    
+        <nav class="header nav controller " role="navigation" data-controller="fragments/header/Menu" data-fragment="header/menu">
+        
+            <div class="accordion topNav controller" data-controller="fragments/Accordion" data-fragment="accordion" data-group="menuToggle" data-target-open=".menuPrimary" data-target-resize=".header.nav">
+        <div class="tooltip" data-asset="tooltip">
+                        <form class="form controller" data-module="form" data-controller="fragments/Form" action="#menu-accordeon" method="GET">
+                        <div class="message info show" data-fragment="message">
+                            <div class="icon"></div>
+                            <div class="text">
+                                <p>HINWEIS</p>
+                            </div>
+                            <div class="description">
+                                <p>Klicken Sie hier, um die Hauptnavigation wieder anzuzeigen.</p>
+                            </div>
+                        </div>
+                        <hr />
+                        <div class="form-row">
+                            <div class="form-group">
+                                <div class="checkbox">
+                                    <label>
+                                        <div class="label"></div>
+                                        <div class="field controller" data-controller="fragments/form/Checkbox" data-type="checkbox" data-text="checkbox1">
+                                            <input type="checkbox" name="checkbox1" id="checkbox1" value="checkbox1">
+                                            <span class="input glyphicon"></span>
+                                            <span class="text"><p>nicht mehr anzeigen</p></span>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <button class="btn link right" type="submit" value="submit"><span>Gelesen</span></button>
+                            </div>
+                        </div>
+                    </form>
+        </div>        <div class="toggle btn btn-white"></div>
+                <a class="logo" href="index.html" data-fragment="header/logo">
+                    <img src="../assets/img/hueck-logo.png" alt="" title="ALUMINIUM SYSTEMS @ HUECK" />
+                </a>
+            </div>
+        
+            <noscript>
+                <p class="nojs-hint"><span class="glyphicon glyphicon-info"></span>This page works best with JavaScript enabled!</p>
+            </noscript>
+        
+            <ul class="menuPrimary topNav" data-element="menu-primary" data-group="menuToggle">
+                <li class="menu hasMega" data-element="mega" data-show-mega="true">
+                    <a href="#"><span class="text">PRODUKTE</span><span class="glyphicon glyphicon-arrow-right"></span></a>
+                    <nav class="mega controller anim8y" data-fragment="header/mega" data-controller="fragments/header/Mega">
+                    
+                        <a href="#" class="glyphicon glyphicon-close" data-element="closeButton"></a>
+                    
+                        <div class="row">
+                            <div class="col col-1 mega-col-first">
+                                <ul class="first">
+                                    <li>
+                                        <h2>SYSTEME</h2>
+                                    </li>
+                                    <li class="">
+                                        <a href="#">
+                                            <strong>Lambda</strong>
+                                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+                                        </a>
+                                        <a href="#" class="btn link">Direkt zu Lambda</a>
+                                        <ul class="second col col-1">
+                                            <li class="columnHeader">
+                                                <a href="#" >
+                                                    <!-- span class="text"><strong>HUECK</strong> @</span -->
+                                                    <span class="glyphicon glyphicon-close"></span>
+                                                    <span class="text">Zurück zur Übersicht</span>
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="#">
+                                                    <strong>Lambda <em>90 duo</em></strong>
+                                                    <p>Lorem ipsum dolor ametsit consectetuer ametsit</p>
+                                                </a>
+                                                <ul class="third col col-1">
+                                                    <li class="columnHeader">
+                                                        <a href="#"></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <strong>Lorem ipsum dolor.</strong>
+                                                            <p>Lorem ipsum dolor ametsit consectetuer ametsit</p>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <strong>Aenean commodo ligula eget dolor.</strong>
+                                                            <p>Lorem ipsum dolor ametsit consectetuer ametsit</p>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <strong>Lorem ipsum dolor.</strong>
+                                                            <p>Lorem ipsum dolor ametsit consectetuer ametsit</p>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <strong>Aenean commodo ligula eget dolor.</strong>
+                                                            <p>Lorem ipsum dolor ametsit consectetuer ametsit</p>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <strong>Lambda 77XL/L</strong>
+                                                    <p>Lorem ipsum dolor ametsit consectetuer ametsit</p>
+                                                </a>
+                    
+                                                <ul class="third col col-1">
+                                                    <li class="columnHeader">
+                                                        <a href="#"></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <strong>Aenean commodo ligula eget dolor.</strong>
+                                                            <p>Lorem ipsum dolor ametsit consectetuer ametsit</p>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <strong>Lorem ipsum dolor.</strong>
+                                                            <p>Lorem ipsum dolor ametsit consectetuer ametsit</p>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <strong>Aenean commodo ligula eget dolor.</strong>
+                                                            <p>Lorem ipsum dolor ametsit consectetuer ametsit</p>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <strong>Lambda 65M</strong>
+                                                    <p>Lorem ipsum dolor ametsit consectetuer ametsit</p>
+                                                </a>
+                    
+                                                <ul class="third col col-1">
+                                                    <li class="columnHeader">
+                                                        <a href="#"></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <strong>Lorem ipsum dolor.</strong>
+                                                            <p>Lorem ipsum dolor ametsit consectetuer ametsit</p>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <strong>Aenean commodo ligula eget dolor.</strong>
+                                                            <p>Lorem ipsum dolor ametsit consectetuer ametsit</p>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <strong>Lambda 57S</strong>
+                                                    <p>Lorem ipsum dolor ametsit consectetuer ametsit</p>
+                                                </a>
+                    
+                                                <ul class="third col col-1">
+                                                    <li class="columnHeader">
+                                                        <a href="#"></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <strong>Lorem ipsum dolor.</strong>
+                                                            <p>Lorem ipsum dolor Lorem ipsum dolor ametsit consectetuer ametsit</p>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <strong>Lorem ipsum dolor.</strong>
+                                                            <p>Lorem ipsum dolor ametsit consectetuer ametsit</p>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <strong>Aenean commodo ligula eget dolor.</strong>
+                                                            <p>Lorem ipsum dolor ametsit consectetuer ametsit</p>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <strong>Lorem ipsum dolor.</strong>
+                                                            <p>Lorem ipsum dolor ametsit consectetuer ametsit</p>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <strong>Aenean commodo ligula eget dolor.</strong>
+                                                            <p>Lorem ipsum dolor ametsit consectetuer ametsit</p>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <strong>Weitere Lambda-Serien</strong>
+                                                    <p>Lorem ipsum dolor ametsit consectetuer ametsit</p>
+                                                </a>
+                    
+                                                <ul class="third col col-1">
+                                                    <li class="columnHeader">
+                                                        <a href="#"></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <strong>Lorem ipsum dolor.</strong>
+                                                            <p>Lorem ipsum dolor ametsit consectetuer ametsit</p>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <strong>Lorem ipsum dolor.</strong>
+                                                            <p>Lorem ipsum dolor ametsit consectetuer ametsit</p>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <strong>Aenean commodo ligula eget dolor.</strong>
+                                                            <p>Lorem ipsum dolor ametsit consectetuer ametsit</p>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <strong>Trigon</strong>
+                                            <p>Aenean massa. Cum sociis natoque penatibus et.</p>
+                                        </a>
+                                        <a href="#" class="btn link">Direkt zu Trigon</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col col-1 mega-col-second">
+                                <ul class="first">
+                                    <li>
+                                        <h2>EIGENSCHAFTEN</h2>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <strong>Wärmedämmung</strong>
+                                            <p>Lorem ipsum dolor ametsit</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <strong>Hochwärmedämmung</strong>
+                                            <p>Lorem ipsum dolor</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <strong>Passivhausstandard</strong>
+                                            <p>Lorem ipsum dolor sit</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <strong>Brandschutz</strong>
+                                            <p>Lorem ipsum dolor </p>
+                                        </a>
+                                    </li>
+                                    <li class="search">
+                                        <h2>PRODUKTSUCHE</h2>
+                                        <form action="#" method="post" data-module="form">
+                                            <div data-element="search">
+                                                <input type="text" name="suche" value="" placeholder="Stichwort"/>
+                                                <a href="#" class="glyphicon glyphicon-magnifier"></a>
+                                            </div>
+                                        </form>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col col-1 mega-col-third">
+                                <ul class="first">
+                                    <li>
+                                        <h2>ZUSATZARTIKEL</h2>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <strong>Zubehör</strong>
+                                            <p>Sed fringilla mauris sit amet nibh.</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <strong>Werkzeuge</strong>
+                                            <p>Etiam sit amet orci eget eros faucibus tincidunt.</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <strong>Zusatzprofile</strong>
+                                            <p>Sed fringilla mauris sit amet nibh.</p>
+                                        </a>
+                                    </li>
+                                    <li class="contact">
+                                        <hr>
+                                        <strong>Ihr Ansprechpartner</strong>
+                                        <p>Max Mustermann</p>
+                                        <img src="../data/content/image/ansprechpartner.jpg" alt="" />
+                                        <div class="info">
+                                            <p><em>LoremIpasum dolor sit amet lorem ganz langer text </em>
+                                            02351/151-327
+                                            </p>
+                                        </div>
+                                        <a href="#" data-asset="button/contact" class="glyphicon glyphicon-callback asset"></a>
+                                        <a href="#" data-asset="button/contact" class="glyphicon glyphicon-chat asset"></a>
+                                        <a href="#" data-asset="button/contact" class="glyphicon glyphicon-mail asset"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>    </li>
+                <li class="menu hasMega" data-element="mega" data-show-mega="true">
+                    <a href="#"><span class="text">INFORMATIONEN <br>UND SERVICE</span><span class="glyphicon glyphicon-arrow-right"></span></a>
+                    <nav class="mega controller anim8y" data-fragment="header/mega" data-controller="fragments/header/Mega">
+                    
+                        <a href="#" class="glyphicon glyphicon-close" data-element="closeButton"></a>
+                    
+                        <div class="row">
+                    
+                        <div class="col col-1">
+                            <ul class="first">
+                                <li>
+                                    <h2>AKTUELLES</h2>
+                                </li>
+                                <li>
+                                    <a href="/author/root/de/de/home/informationen-services/InfoPoint.html">
+                    
+                                        <strong>Info-Point</strong>
+                                    </a>
+                    
+                                </li>
+                                <li class="">
+                                    <a href="/author/root/de/de/home/informationen-services/aluminium-im-profil.html">
+                    
+                                        <img src="../data/content/image/AiP.jpg">
+                                        <p>Aluminium im Profil</p>
+                                    </a>
+                    
+                                </li>
+                                <li class="">
+                                    <a>
+                    
+                                        <strong>Your profile</strong>
+                                    </a>
+                    
+                                </li>
+                                <li class="">
+                                    <a href="/author/root/de/de/home/informationen-services/messen.html">
+                    
+                                        <strong>Messen &amp; Events</strong>
+                                    </a>
+                    
+                                </li>
+                                <li class="">
+                                    <a href="/author/root/de/de/home/informationen-services/schulungen.html">
+                    
+                                        <strong>Schulungen &amp; Seminare</strong>
+                                    </a>
+                    
+                                </li>
+                            </ul>
+                        </div><div class="col col-1">
+                            <ul class="first">
+                                <li>
+                                    <h2>DOWNLOADS &amp; TOOLS</h2>
+                                </li>
+                                <li>
+                                    <a href="/author/root/de/de/home/informationen-services/prospekte.html">
+                    
+                                        <strong>Prospekte</strong>
+                                    </a>
+                    
+                                </li>
+                                <li>
+                                    <a href="/author/root/de/de/home/informationen-services/datenblaetter.html">
+                    
+                                        <strong>Datenblätter</strong>
+                                    </a>
+                    
+                                </li>
+                                <li>
+                                    <a href="/author/root/de/de/home/informationen-services/produktpaesse.html">
+                    
+                                        <strong>Produktpässe</strong>
+                                    </a>
+                    
+                                </li>
+                                <li>
+                                    <a href="/author/root/de/de/home/informationen-services/cad-daten.html">
+                    
+                                        <strong>CAD-Daten</strong>
+                                    </a>
+                    
+                                </li>
+                                <li>
+                                    <a href="/author/root/de/de/home/informationen-services/bauproduktenverordnung.html">
+                    
+                                        <strong>Bauproduktenverordnung</strong>
+                                    </a>
+                    
+                                </li>
+                                <li>
+                                    <a href="/author/root/de/de/home/informationen-services/epd-produktdeklaration.html">
+                    
+                                        <strong>EPD Produktdeklaration</strong>
+                                    </a>
+                    
+                                </li>
+                                <li>
+                                    <a href="/author/root/de/de/home/informationen-services/fluchttueren-zertifikate.html">
+                    
+                                        <strong>Fluchttüren-Zertifikate</strong>
+                                    </a>
+                    
+                                </li>
+                                <li>
+                                    <a href="/author/root/de/de/home/informationen-services/sicherheitsdatenblaetter.html">
+                    
+                                        <strong>Sicherheitsdatenblätter</strong>
+                                    </a>
+                    
+                                </li>
+                                <li>
+                                    <a href="/author/root/de/de/home/informationen-services/ausschreibungstexte.html">
+                    
+                                        <strong>Ausschreibungstexte</strong>
+                                    </a>
+                    
+                                </li>
+                                <li>
+                                    <a href="/author/root/de/de/home/informationen-services/u-werte-berechnung.html">
+                    
+                                        <strong>U-Werte-Berechnung</strong>
+                                    </a>
+                    
+                                </li>
+                                <li class="">
+                                    <a href="/author/root/de/de/home/informationen-services/hueck-statikprogramm.html">
+                    
+                                        <strong>Hueck Statikprogramm</strong>
+                                    </a>
+                    
+                                </li>
+                                <li class="">
+                                    <a href="/author/root/de/de/home/informationen-services/orgadata.html">
+                    
+                                        <strong>Orgadata</strong>
+                                    </a>
+                    
+                                </li>
+                                <li class="">
+                                    <a href="/author/root/de/de/home/informationen-services/apps.html">
+                    
+                                        <strong>Apps</strong>
+                                    </a>
+                    
+                                </li>
+                                <li class="">
+                                    <a href="http://www.youtube.com/user/hueckaluminium" target="_blank">
+                    
+                                        <img src="../data/content/image/YouTube.jpg">
+                                        <strong>HUECK YouTube-Channel</strong>
+                                    </a>
+                    
+                                </li>
+                            </ul>
+                        </div><div class="col col-1">
+                            <ul class="first">
+                                <li>
+                                    <h2>KATALOGE</h2>
+                                </li>
+                                <li>
+                                    <a href="http://www.flipedia.de/3041" target="_blank">
+                    
+                                        <strong>Aluminium Systeme</strong>
+                                    </a>
+                    
+                                </li>
+                                <li>
+                                    <a href="http://www.flipedia.de" target="_blank">
+                    
+                                        <strong>Lambda duo Fenster &amp; Türen</strong>
+                                    </a>
+                    
+                                </li>
+                                <li>
+                                    <a href="http://www.flipedia.de" target="_blank">
+                    
+                                        <strong>Lambda Fenster</strong>
+                                    </a>
+                    
+                                </li>
+                                <li>
+                                    <a href="http://www.flipedia.de" target="_blank">
+                    
+                                        <strong>Lambda Türen</strong>
+                                    </a>
+                    
+                                </li>
+                                <li>
+                                    <a href="http://www.flipedia.de" target="_blank">
+                    
+                                        <strong>Lava 77-30 Brandschutz-Türen</strong>
+                                    </a>
+                    
+                                </li>
+                                <li>
+                                    <a href="http://www.flipedia.de" target="_blank">
+                    
+                                        <strong>Trigon Fassaden</strong>
+                                    </a>
+                    
+                                </li>
+                                <li>
+                                    <a href="http://www.flipedia.de" target="_blank">
+                    
+                                        <strong>Volato-Hebeschiebekonstruktionen</strong>
+                                    </a>
+                    
+                                </li>
+                                <li>
+                                    <a href="http://www.flipedia.de" target="_blank">
+                    
+                                        <strong>Brandschutzsysteme</strong>
+                                    </a>
+                    
+                                </li>
+                                <li>
+                                    <a href="http://www.flipedia.de" target="_blank">
+                    
+                                        <strong>Rauchschutzkonstruktionen</strong>
+                                    </a>
+                    
+                                </li>
+                                <li>
+                                    <a href="http://www.flipedia.de" target="_blank">
+                    
+                                        <strong>Ungedämmte Konstruktionen</strong>
+                                    </a>
+                    
+                                </li>
+                            </ul>
+                        </div></div>
+                    
+                    </nav>    </li>
+                <li class="menu hasMega active" data-element="mega" data-show-mega="true">
+                    <a href="#"><span class="text">REFERENZEN</span><span class="glyphicon glyphicon-arrow-right"></span></a>
+                    <nav class="mega controller anim8y" data-fragment="header/mega" data-controller="fragments/header/Mega">
+                    
+                        <a href="#" class="glyphicon glyphicon-close" data-element="closeButton"></a>
+                    
+                        <div class="row">
+                            <div class="col col-1">
+                                <ul class="first">
+                                    <li>
+                                        <h2>ÜBERBLICK</h2>
+                                    </li>
+                                    <li class="">
+                                        <a href="#">
+                                            <strong>Alle Referenzen</strong>
+                                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+                                        </a>
+                                        <ul class="second col col-1">
+                                            <li class="close">
+                                                <a href="#" >
+                                                    <span class="glyphicon glyphicon-close"></span>
+                                                    <span class="text">Zurück zur Übersicht</span>
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="#">
+                                                    <strong>Lambda 90 duo</strong>
+                                                    <p>Lorem ipsum dolor ametsit consectetuer ametsit</p>
+                                                </a>
+                                                <ul class="third col col-1">
+                                                    <li class="close">
+                                                        <a href="#"></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <strong>Lambda 90 duo</strong>
+                                                            <p>Lorem ipsum dolor ametsit consectetuer ametsit</p>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <strong>Lambda 77XL/L</strong>
+                                                            <p>Lorem ipsum dolor ametsit consectetuer ametsit</p>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <strong>Lambda 77XL/L</strong>
+                                                    <p>Lorem ipsum dolor ametsit consectetuer ametsit</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <strong>Lambda 65M</strong>
+                                                    <p>Lorem ipsum dolor ametsit consectetuer ametsit</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <strong>Lambda 57S</strong>
+                                                    <p>Lorem ipsum dolor ametsit consectetuer ametsit</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <strong>Weitere Lambda-Serien</strong>
+                                                    <p>Lorem ipsum dolor ametsit consectetuer ametsit</p>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h2>REFERENZEN NACH PRODUKTEN</h2>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <strong>Lambda</strong>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <strong>Lava</strong>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <strong>Trigon</strong>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <strong>Volato</strong>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <h2>REFERENZEN NACH BRANCHEN</h2>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <strong>Bildung</strong>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <strong>Büro</strong>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <strong>Gesundheit</strong>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <strong>Tourismus</strong>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col col-1">
+                                <ul class="first">
+                                    <li>
+                                        <h2>REFERENZEN NACH LÄNDERN</h2>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <strong>Deutschland</strong>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <strong>England</strong>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <strong>Frankreich</strong>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <strong>Irland</strong>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <strong>Kroatien</strong>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <strong>Niederlande</strong>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <strong>Österreich</strong>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <strong>Polen</strong>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <strong>Russland</strong>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <strong>Saudi Arabien</strong>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <strong>Schweiz</strong>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <strong>Slowakei</strong>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col col-1">
+                    
+                                <div class="controller fragment" data-fragment="scrollable" data-controller="fragments/Scrollable">
+                                <div>
+                                    <ul class="first">
+                                        <li>
+                                            <h2>UNSERE AUSWAHL</h2>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <strong>St Paul‘s Place, GB-Sheffield</strong>
+                                                <img src="../data/content/image/thumb-object-sheffield-120x120.jpg" />
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <strong>KIA Europazentrale, D-Frankfurt</strong>
+                                                <img src="../data/content/image/thumb-object-frankfurt-120x120.jpg" />
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <strong>Begovaya-Tower, RUS-Moskau</strong>
+                                                <img src="../data/content/image/thumb-object-sheffield-120x120.jpg" />
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <strong>St Paul‘s Place, GB-Sheffield</strong>
+                                                <img src="../data/content/image/thumb-object-sheffield-120x120.jpg" />
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <strong>KIA Europazentrale, D-Frankfurt</strong>
+                                                <img src="../data/content/image/thumb-object-frankfurt-120x120.jpg" />
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <strong>Begovaya-Tower, RUS-Moskau</strong>
+                                                <img src="../data/content/image/thumb-object-sheffield-120x120.jpg" />
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>    </li>
+                <li class="menu hasMega" data-element="mega" data-show-mega="true">
+                    <a href="#"><span class="text">UNTERNEHMEN</span><span class="glyphicon glyphicon-arrow-right"></span></a>
+                    <nav class="mega controller anim8y" data-fragment="header/mega" data-controller="fragments/header/Mega">
+                    
+                        <a href="#" class="glyphicon glyphicon-close" data-element="closeButton"></a>
+                    
+                        <div class="row">
+                    
+                            <div class="col col-1">
+                                <ul class="first">
+                                    <li>
+                                        <h2>UNTERNEHMEN</h2>
+                                    </li>
+                                    <li>
+                                        <a href="/author/root/de/de/home/unternehmen/erfahrung.html">
+                    
+                                            <strong>Erfahrung</strong>
+                                            <p>200 Jahre Tradition mit  innovativer Ingenieurskunst</p>
+                                        </a>
+                    
+                                    </li>
+                                    <li>
+                                        <a href="/author/root/de/de/home/unternehmen/qualitaet.html">
+                    
+                                            <strong>Qualität</strong>
+                                            <p>Qualität ist ein Prozess und kein Zustand.</p>
+                                        </a>
+                    
+                                    </li>
+                                    <li class="">
+                                        <a href="/author/root/de/de/home/unternehmen/service.html">
+                    
+                                            <strong>Service</strong>
+                                            <p>Das unterscheidet uns.</p>
+                                        </a>
+                    
+                                    </li>
+                                    <li class="">
+                                        <a href="/author/root/de/de/home/unternehmen/international.html">
+                    
+                                            <strong>International</strong>
+                                            <p>Weltweiter Produzent und Anbieter von Aluminiumprofil-Systemen</p>
+                                        </a>
+                    
+                                    </li>
+                                </ul>
+                            </div><div class="col col-1">
+                            <ul class="first">
+                                <li>
+                                    <h2>KARRIERE</h2>
+                                </li>
+                                <li>
+                                    <a href="/author/root/de/de/home/unternehmen/karriere.html">
+                    
+                                        <strong>Arbeiten bei Hueck</strong>
+                                    </a>
+                    
+                                </li>
+                                <li>
+                                    <a href="/author/root/de/de/home/unternehmen/ausbildung.html">
+                    
+                                        <strong>Ausbildung bei Hueck</strong>
+                                    </a>
+                    
+                                </li>
+                                <li>
+                                    <a href="/author/root/de/de/home/unternehmen/offene-stellen.html">
+                    
+                                        <strong>Offene Stellen</strong>
+                                    </a>
+                    
+                                </li>
+                                <li class="contact">
+                                    <hr>
+                    
+                                    <strong>Ihre Ansprechpartnerin</strong>
+                                    <p>Jutta Kaduk</p>
+                                    <img alt="" src="../data/content/image/kein_Bild.png">
+                                    <div class="info">
+                                        <p>Wir freuen uns auf Ihren Anruf.<br>
+                                            02351 151-277</p>
+                                    </div>
+                                    <form class="asset controller" data-asset="button/contact" data-controller="assets/button/Contact" action="http://127.0.0.1:8050/_release/meinhueck_kontakt.html" method="POST">
+                                        <input type="hidden" name="phone" value="492351151431">
+                                        <a class="glyphicon glyphicon-callback" href="#" type="submit"></a>
+                                    </form>
+                                    <form class="asset controller" data-asset="button/contact" data-controller="assets/button/Contact" action="http://127.0.0.1:8050/_release/meinhueck_kontakt.html" method="POST">
+                                        <input type="hidden" name="mailto" value="jutta.kaduk@hueck.de">
+                                        <a class="glyphicon glyphicon-mail" href="#" type="submit"></a>
+                                    </form>
+                                </li></ul>
+                        </div><div class="col col-1">
+                            <ul class="first">
+                                <li>
+                                    <h2>PRESSE</h2>
+                                </li>
+                                <li>
+                                    <a href="/author/root/de/de/home/unternehmen/pressefach.html">
+                    
+                                        <strong>Pressefach</strong>
+                                    </a>
+                    
+                                </li>
+                                <li>
+                                    <a href="/author/root/de/de/home/unternehmen/pressemitteilungen.html">
+                    
+                                        <strong>Pressemitteilungen</strong>
+                                    </a>
+                    
+                                </li>
+                                <li>
+                                    <div style="height:32px"></div>
+                    
+                                </li>
+                                <li class="contact">
+                                    <hr>
+                    
+                                    <strong>Ihr Pressekontakt</strong>
+                                    <p>Holger Madsack</p>
+                                    <img alt="" src="../data/content/image/kein_Bild.png">
+                                    <div class="info">
+                                        <p>Wir freuen uns auf Ihren Anruf.<br>
+                                            02351 151 - 431</p>
+                                    </div>
+                                    <form class="asset controller" data-asset="button/contact" data-controller="assets/button/Contact" action="http://127.0.0.1:8050/_release/meinhueck_kontakt.html" method="POST">
+                                        <input type="hidden" name="phone" value="492351151431">
+                                        <a class="glyphicon glyphicon-callback" href="#" type="submit"></a>
+                                    </form>
+                                    <form class="asset controller" data-asset="button/contact" data-controller="assets/button/Contact" action="http://127.0.0.1:8050/_release/meinhueck_kontakt.html" method="POST">
+                                        <input type="hidden" name="mailto" value="jutta.kaduk@hueck.de">
+                                        <a class="glyphicon glyphicon-mail" href="#" type="submit"></a>
+                                    </form>
+                                </li></ul>
+                        </div><div class="col col-1">
+                            <ul class="first">
+                            </ul>
+                        </div></div>
+                    
+                    
+                    </nav>    </li>
+                <li class="menu hasMega" data-element="mega" data-show-mega="true">
+                    <a href="#"><span class="text">KONTAKT</span><span class="glyphicon glyphicon-arrow-right"></span></a>
+                    <nav class="mega controller anim8y" data-fragment="header/mega" data-controller="fragments/header/Mega">
+                    
+                        <a href="#" class="glyphicon glyphicon-close" data-element="closeButton"></a>
+                    
+                        <div class="row">
+                            <div class="col col-1">
+                                <ul class="first">
+                                    <li>
+                                        <h2>WIR SIND FÜR SIE DA</h2>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <strong>Rückruf anfordern</strong>
+                                            <p>Lorem ipsum dolor ametsit</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <strong>Chat starten</strong>
+                                            <p>Lorem ipsum dolor ametsit consecteuer sit dolor</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <strong>Kontakt aufnehmen</strong>
+                                            <p>Lorem ipsum dolor ametsit consecteuer sit dolor</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col col-1">
+                                <ul class="first">
+                                    <li>
+                                        <h2>WIR SIND FÜR SIE DA</h2>
+                                    </li>
+                                    <li class="noLink">
+                                        <strong>Name und Anschrift</strong>
+                                        <p>Eduard Hueck GmbH & Co. KG
+                                            Loher Straße 9
+                                            58511 Lüdenscheid</p>
+                                        <a href="#">Anfahrtskizze herunterladen</a>
+                    
+                                        <strong>Telefon</strong>
+                                        <p>+49 2351 151-0</p>
+                    
+                                        <strong>Fax</strong>
+                                        <p>+49 2351 151-283</p>
+                    
+                                        <strong>E-Mail</strong>
+                                        <p>info@hueck.de</p>
+                                    </li>
+                    
+                                </ul>
+                            </div>
+                            <div class="col col-1">
+                                <ul class="first">
+                    
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>    </li>
+            </ul>
+            <ul class="menuLink" data-element="menu-link">
+                <li class="link nowrap">
+                    <a href="#"><small><span class="glyphicon glyphicon-cart-empty changeOnCartStatus"></span><span class="text document" data-element="text">MEINE DOKUMENTE <span class="document" data-element="count">(38)</span></span></small></a>
+                    <nav class="mega controller anim8y" data-fragment="header/mega" data-controller="fragments/header/Mega">
+                    
+                        <a href="#" class="glyphicon glyphicon-close" data-element="closeButton"></a>
+                    
+                        <div class="row">
+                            <div class="col col-1-and-half">
+                                <ul class="first">
+                                    <li>
+                                        <h2>MEINE DOKUMENTE</h2>
+                                    </li>
+                                    <li class="">
+                                        <a href="#">
+                                            <strong>Aktueller Inhalt</strong>
+                                            <p>In Ihrem Warenkorb befinden sich
+                                                <strong>5 Dokumente</strong></p>
+                                        </a>
+                                    </li>
+                                    <li class="document">
+                                        <hr>
+                                        <strong>Name des Dokuments</strong>
+                                        <div class="info">
+                                            <span>Dateityp, 3 MB</span>
+                                            <span class="glyphicon glyphicon-fax"></span>
+                                            <a href="#">online anschauen</a>
+                                        </div>
+                                    </li>
+                                    <li class="document">
+                                        <hr>
+                                        <strong>Name des Dokuments</strong>
+                                        <div class="info">
+                                            <span class="fileName">Dateityp, 3 MB</span>
+                                            <span class="glyphicon glyphicon-fax"></span>
+                                            <a href="#">online anschauen</a>
+                                        </div>
+                                    </li>
+                    
+                                </ul>
+                                <div class="paging page" data-fragment="paging">
+                                    <a class="btn link btn-back"><span>Zurück</span></a>
+                                    <span class="active"><span>1</span></span>
+                                    <a class="btn link"><span>2</span></a>
+                                    <a class="btn link btn-next"><span>Nächste</span></a>
+                                </div>
+                            </div>
+                            <div class="col col-1-and-half">
+                                <ul class="first">
+                                    <li class="sendLink">
+                                        <strong>Link zusenden</strong>
+                                        <p>Geben Sie einfach Ihre E-Mail-Adresse an und Sie erhalten den Download-Link per E-Mail.</p>
+                    
+                                        <form action="#" method="post" data-module="form">
+                                            <div data-element="send">
+                                                <input type="text" name="send" value="" placeholder="Ihre E-Mail Adresse"/>
+                    
+                                                <div class="checkbox">
+                                                    <label>
+                                                        
+                                                        <div class="field controller" data-controller="fragments/form/Checkbox" data-type="checkbox">
+                                                            <input type="checkbox" class="form-control" name="agb" id="agb" value="agb" required >
+                                                            <span class="input glyphicon"></span>
+                                                            <span class="text"><p>Bitte akzeptieren Sie unsere <a href='#'>Datenschutzbestimmungen*</a>.</p></span>
+                                                        </div>
+                                                    </label>
+                                                        <div class="message success " data-fragment="message">
+                                                            <div class="icon"></div>
+                                                            <div class="text">
+                                                                
+                                                            </div>
+                                                        </div>
+                                                        <div class="message error " data-fragment="message">
+                                                            <div class="icon"></div>
+                                                            <div class="text">
+                                                                <p>Fehler: Lorem ipsum dolor sit amet.</p>
+                                                            </div>
+                                                        </div>
+                                                </div>
+                                                <p class="required">* Pflichtfelder</p>
+                    
+                                                <a class="button" href="#">
+                                                    <span>Link versenden</span>
+                                                    <span class="glyphicon glyphicon-arrow-right"></span>
+                                                </a>
+                                            </div>
+                                        </form>
+                                    </li>
+                                </ul>
+                            </div>
+                    
+                        </div>
+                    </nav>        </li>
+            </ul>
+            <ul data-element="menu-link" class="menuLink">
+                <li class="link">
+                    <a href="/author/extrusion/de/de/home/index.html">
+                        <small><span class="text ">HUECK EXTRUSION&nbsp;</span></small>
+                    </a>
+                </li>
+            </ul>
+        
+            <div class="accordion bottomNav menuLoggedIn controller" data-controller="fragments/Accordion" data-fragment="accordion" data-group="menuToggle" data-target-open=".menuLoggedIn" data-target-resize=".header.nav">
+            <div class="tooltip" data-asset="tooltip">
+                        <form class="form controller" data-module="form" data-controller="fragments/Form" action="#menu-accordeon" method="GET">
+                        <div class="message info show" data-fragment="message">
+                            <div class="icon"></div>
+                            <div class="text">
+                                <p>HINWEIS</p>
+                            </div>
+                            <div class="description">
+                                <p>Klicken Sie hier, um die Hauptnavigation wieder anzuzeigen.</p>
+                            </div>
+                        </div>
+                        <hr />
+                        <div class="form-row">
+                            <div class="form-group">
+                                <div class="checkbox">
+                                    <label>
+                                        <div class="label"></div>
+                                        <div class="field controller" data-controller="fragments/form/Checkbox" data-type="checkbox" data-text="checkbox1">
+                                            <input type="checkbox" name="checkbox1" id="checkbox1" value="checkbox1">
+                                            <span class="input glyphicon"></span>
+                                            <span class="text"><p>nicht mehr anzeigen</p></span>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <button class="btn link right" type="submit" value="submit"><span>Gelesen</span></button>
+                            </div>
+                        </div>
+                    </form>
+            </div>    <div class="toggle btn btn-white"></div>
+                <h3><a href="index.html">MEIN HUECK</a></h3>
+            </div>
+            <ul class="menuLoggedIn bottomNav" data-element="menu-logged-in" data-group="menuToggle">
+                <li class="text">
+                    <small>Willkommen, Herr Mustermann-Doppelname</small>
+                </li>
+                <li class="menu">
+                    <a href="#"><span class="text">DOKUMENTE</span><span class="glyphicon glyphicon-arrow-right"></span></a>
+                </li>
+                <li class="menu">
+                    <a href="#"><span class="text">BESTELLUNGEN</span><span class="glyphicon glyphicon-arrow-right"></span></a>
+                </li>
+                <li class="menu">
+                    <a href="#"><span class="text">LOREM IPSUM</span><span class="glyphicon glyphicon-arrow-right"></span></a>
+                </li>
+                <li class="menu">
+                    <a href="#"><span class="text">ANSPRECHPARTNER</span><span class="glyphicon glyphicon-arrow-right"></span></a>
+                </li>
+                <li class="menu">
+                    <a href="#"><span class="text">MEIN PROFIL</span><span class="glyphicon glyphicon-arrow-right"></span></a>
+                </li>
+            </ul>
+            <ul class="menuLoggedIn no-margin">
+                <li class="link">
+                    <form data-controller="fragments/Form" data-module="form" class="form controller" method="POST">
+                        <input type="hidden" value="logout" name="action">
+                        <button class="btn link underline" type="submit" value="submit"><span class="small">Abmelden</span></button>
+                    </form>
+                </li>
+            </ul>
+        
+            <div class="title menuLogin">
+                <h3><a href="index.html">MEIN HUECK LOGIN</a></h3>
+            </div>
+            <ul class="menuLogin" data-element="menu-login">
+                <li class="link">
+                    <form method="GET" class="form controller" data-module="form" data-controller="fragments/Form" action="#" data-inline-validation="true">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <div class="input">
+                                    <div class="field">
+                                        <input type="text" data-type="email" class="form-control" name="email" id="email" placeholder="E-Mail-Adresse" value="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <div class="input">
+                                    <div class="field">
+                                        <input type="password" class="form-control" name="password" id="password" placeholder="Passwort" value="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <button class="btn link arrow-right" type="submit" value="submit"><span>LOGIN</span></button>
+                        </div>
+                    </form>
+                </li>
+                <li class="link">
+                    <a href="#"><small><span class="text">Passwort vergessen?</span></small></a>
+                </li>
+                <li class="link">
+                    <a href="#"><small><span class="text">Jetzt registrieren</span></small></a>
+                </li>
+            </ul>
+            <ul class="menuLoginButton" data-element="menu-login-button">
+                <li class="link">
+                    <a href="#">
+                            <span class="text">
+                                <h3>MEIN HUECK LOGIN</h3><small>
+                                <span class="text">Login / Registrieren</span></small>
+                            </span>
+                        <span class="glyphicon glyphicon-arrow-right"></span>
+                    </a>
+                </li>
+            </ul>
+            <ul class="menuLink" data-element="menu-link">
+                <li class="link">
+                    <a href="#" class="no-link"><small><span class="text">Deutschland</span></small></a>
+                    <a href="#"><small><span class="text">EN</span></small></a>
+                </li>
+            </ul>
+        
+        </nav>
+    </header>
+    <div class="content controller" data-module="content" data-controller="modules/Content">
+
+        <div class="search controller" data-fragment="search" data-controller="fragments/form/search">
+            <form name="search" class="controller" data-controller="fragments/Form" data-inline-validation="true">
+                <div class="searchField" data-element="searchField">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <div class="select datalist">
+                                <label for="">
+                                    <div class="field controller" data-controller="fragments/form/Datalist" data-type="datalist" data-ajax-method="GET" data-ajax-type="json" data-min-length="3" data-ajax="../data/ajax/data-list.html?">
+                                        <input type="text" id="search" name="search" class="form-control" autocomplete="off" placeholder="Produkt oder Inhalt">
+                                        <span class="glyphicon glyphicon-close clear"></span>
+                                    </div>
+                                </label>
+                            </div>                    <span class="glyphicon glyphicon-magnifier"></span>
+                            <button class="btn btn-white" type="submit" value="submit"><span>Finden</span></button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <!-- div class="row">
+            <div class="col col-9">
+
+                <div class="teaser controller hero " data-fragment="teaser" data-controller="fragments/Teaser" data-href="#"   >
+                
+                    <div class="content">
+                
+                                <h1>HEADLINE<br>HEADLINE</h1>
+                                <h2>Subheadline Loremipsum dolorsit<br>Subheadline Loremipsum dolorsit</h2>
+                
+                        <h4>Loremipsum</h4>
+                
+                
+                        <ul class="arrow">
+                            <li>Loremipsum dolorsit amet</li>
+                            <li>Loremipsum dolorsit amet Loremipsum dolorsit amet</li>
+                            <li>Loremipsum dolorsit amet</li>
+                        </ul>
+                
+                
+                    </div>
+                
+                            <span class="image loading " data-asset="image">
+                                <img class="img" src="" alt="" title="" data-src="../data/content/image/haus_05-461x335x.png" />
+                            </span>
+                    <div class="button">
+                        <a class="btn btn-white" href="#"><span class="text">Loremipsum dolorsit met consec</span><span class="glyphicon glyphicon-arrow-right"></span></a>
+                    </div>
+                
+                
+                </div>
+            </div>
+        </div -->
+        <!-- div class="row no-border controller" data-controller="fragments/TeaserRow"
+                >
+
+            <div class="col col-9">
+
+                <div class="teaser controller text image-right2 layer"
+                     data-href-target="extern" data-link-type="youtubeLink"
+                     data-href="" data-controller="fragments/Teaser" data-fragment="teaser">
+
+                    <div class="magnifier controller" data-controller="fragments/Lightbox" data-fragment="magnifier">
+
+                        <div class="content open" data-element="fullscreenButton">
+
+                            <h2>Orgadata</h2>
+
+                            <div class="text">
+                                <p>
+                                    Anwendungsvideo<a class="btn link glyphicon-arrow-right" href="http://www.youtube.com/embed/dPoEER1jWow"></a>
+                                </p>
+                            </div>
+
+                        </div>
+    <span class="image loading open" data-asset="image">
+        <img class="img" data-src="/author/dam/Informationen_Services/16_Orgadata/Image_Orgadata_Video.jpg" title="" alt="" src="">
+    </span>
+                        <div class="layer">
+                            <div class="video-container">
+                                <iframe src="" data-src="http://www.youtube.com/embed/dPoEER1jWow" frameborder="0" width="560" height="315"></iframe>
+                            </div>
+                        </div>
+                        <a class="btn btn-grey glyphicon-close close" data-element="closeButton" href="#"></a>
+                    </div>
+                </div>
+            </div>
+        </div -->
+
+        <div data-controller="fragments/TeaserRow" class="row no-border controller">
+            <div class="col col-3">
+
+                <div data-fragment="teaser" data-controller="fragments/Teaser" data-href="http://www.youtube.com/embed/oggx16u9we8?rel=0" data-link-type="externalLink" data-href-target="extern" class="teaser controller default">
+
+                    <div class="content">
+
+                        <h2>Unterneh&shy;mensfilm</h2>
+
+                        <div class="text">
+                            <p>
+                                Hueck stellt sich vor.<a href="http://www.youtube.com/embed/oggx16u9we8?rel=0" class="btn link glyphicon-arrow-right"></a>
+                            </p>
+                        </div>
+
+                    </div>
+    <span data-asset="image" class="image">
+        <img src="../../data/content/image/Unternehmensfilm.jpg" alt="" title="" class="img">
+    </span>
+                </div>
+
+            </div>
+            <div class="col col-3">
+
+                <div class="teaser controller default layer" data-href-target="extern" data-link-type="externalLink" data-controller="fragments/Teaser" data-fragment="teaser">
+                    <div class="magnifier controller" data-controller="fragments/Lightbox" data-fragment="magnifier">
+                        <div class="content" data-element="fullscreenButton">
+                            <h2>Unterneh&shy;mensfilm</h2>
+                            <div class="text">
+                                <p>
+                                    Unternehmensfilm der muss noch gemacht werden von Marileen ;-)<a class="btn link glyphicon-arrow-right" href="http://www.youtube.com/embed/oggx16u9we8?rel=0"></a>
+                                </p>
+                            </div>
+                        </div>
+                        <span class="image loading open" data-asset="image">
+                            <img class="img" data-src="../data/content/image/Unternehmensfilm.jpg" title="" alt="" src="">
+                        </span>
+                        <div class="layer">
+                            <div class="video-container">
+                                <iframe src="http://www.youtube.com/embed/oggx16u9we8?rel=0" frameborder="0" width="560" height="315"></iframe>
+                            </div>
+                        </div>
+                        <a class="btn btn-grey glyphicon-close close" data-element="closeButton" href="#"></a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col col-3">
+
+                <div class="teaser controller default " data-fragment="teaser" data-controller="fragments/Teaser" data-href="#"   >
+                
+                
+                            <span class="image loading " data-asset="image">
+                                <img class="img" src="" alt="" title="" data-src="../data/content/image/teaser_03-228x228.png" />
+                            </span>
+                    <div class="button">
+                        <a class="btn btn-white" href="#"><span class="text">Begovaya-Tower, RUS-Moskau</span><span class="glyphicon glyphicon-arrow-right"></span></a>
+                    </div>
+                
+                
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col col-9">
+
+                <div class="textblock image-left fix controller" data-fragment="textblock" data-controller="fragments/Textblock">
+                    <hgroup>
+                        
+                        <h2>H2 1/3 Bild links und 2/3 Text</h2>
+                        
+                        
+                        
+                    </hgroup>    <div class="content">
+                        <div class="zoomImage controller" data-fragment="zoomImage" data-controller="fragments/ZoomImage" data-zoom-target='.galerie[data-fragment="galerie"]'>
+                    <span class="image loading " data-asset="image">
+                        <img class="img" src="" alt="" title="" data-src="../data/content/image/people_01-228x166.png" />
+                    </span></div>
+                        
+                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem.</p>
+                        
+                    </div>
+                </div>                <div class="textblock image-right controller" data-fragment="textblock" data-controller="fragments/Textblock">
+                    <hgroup>
+                        
+                        
+                        <h3>H3 1/3 Bild rechts und 2/3 Text</h3>
+                        
+                        
+                    </hgroup>    <div class="content">
+                        <div class="zoomImage controller" data-fragment="zoomImage" data-controller="fragments/ZoomImage" data-zoom-target='.galerie[data-fragment="galerie"]'>
+                    <span class="image loading " data-asset="image">
+                        <img class="img" src="" alt="" title="" data-src="../data/content/image/people_01-228x166.png" />
+                    </span></div>
+                        
+                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem.</p>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col col-9">
+
+                <div class="teaser controller text image-right layer"
+                     data-href-target="extern" data-link-type="externalLink" data-controller="fragments/Teaser" data-fragment="teaser">
+
+                    <div class="magnifier controller" data-controller="fragments/Lightbox" data-fragment="magnifier">
+                        <div class="content open" data-element="fullscreenButton">
+                            <h2>Unterneh&shy;mensfilm</h2>
+                            <div class="text">
+                                <p>
+                                    HUECK stellt sich vor.<a class="btn link glyphicon-arrow-right" href="http://qr.hueck.com/video1de"></a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="layer">
+                            <div class="video-container">
+                                <iframe src="" data-src="http://www.youtube.com/embed/oggx16u9we8?rel=0" frameborder="0" width="560" height="315"></iframe>
+                            </div>
+                        </div>
+                        <a class="btn btn-grey glyphicon-close close" data-element="closeButton" href="#"></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="row no-border ">
+
+            <div class="col col-9">
+
+                <div data-href-target="intern" data-href="" data-controller="fragments/Teaser" data-fragment="teaser" class="teaser controller text image-right listing picture">
+
+                    <div class="content open">
+                        <h3>Noch&nbsp;<strong class="bigger">124</strong>&nbsp;Tage bis zur Bau 2015</h3>
+                        <div class="text">
+                            <p>
+                                Hier für ein Gespräch vor Ort anmelden.<a href="" class="btn link glyphicon-arrow-right"></a>
+                            </p>
+                        </div>
+                    </div>
+    <span data-asset="image" class="image open">
+        <img title="" alt="" src="../data/content/image/messevorschau.jpg" class="img">
+    </span>
+                </div></div>
+        </div>
+
+
+
+
+        <div data-controller="fragments/TeaserRow" class="row no-border controller">
+
+            <div class="col col-4-and-half">
+
+                <div data-fragment="teaser" data-controller="fragments/Teaser" data-href="/author/root/de/de/home/unternehmen/karriere" data-link-type="internalLink" data-href-target="intern" class="teaser controller default" >
+
+                    <div class="content open">
+
+                        <h2>Karriere bei Hueck</h2>
+
+                        <div class="text">
+                            <p>
+                                Ob vor der Ausbildung, nach dem Studium oder bereits mit Berufserfahrung - Hueck freut sich Sie kennenzulernen.<a href="/author/root/de/de/home/unternehmen/karriere" class="btn link glyphicon-arrow-right"></a>
+                            </p>
+                        </div>
+
+                    </div>
+    <span data-asset="image" class="image open">
+        <img src="../data/content/image/Teaser_Karriere.jpg" alt="" title="" class="img">
+    </span>
+                </div>
+            </div>
+            <div class="col col-4-and-half">
+
+                <div data-fragment="teaser" data-controller="fragments/Teaser" data-href="/author/root/de/de/home/baustellenreporter" data-link-type="internalLink" data-href-target="intern" class="teaser controller default">
+
+                    <div class="content open" >
+
+                        <h2>Baustellen­reporter</h2>
+
+                        <div class="text">
+                            <p>
+                                Jetzt Bauschild fotografieren, hochladen und ein iPad mini gewinnen!<a href="/author/root/de/de/home/baustellenreporter" class="btn link glyphicon-arrow-right"></a>
+                            </p>
+                        </div>
+
+                    </div>
+    <span data-asset="image" class="image open">
+        <img src="../data/content/image/Bauschild.jpg" alt="" title="" class="img">
+    </span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    
+    <footer class="footer controller" data-module="footer" data-controller="modules/Footer">
+        <section class="top">
+            <ul>
+                <li>
+                    <a href="/author/root/de/de/home/produkte/fenstersysteme.html">
+                        <span>Fenstersysteme</span>
+                        <img src="../data/content/image/hueck-lambda-ws.png" alt="" />
+                    </a>
+                </li>
+                <li>
+                    <a href="/author/root/de/de/home/produkte/fenstersysteme.html">
+                        <span>Türensysteme</span>
+                        <img src="../data/content/image/hueck-lambda-ds.png" alt="" />
+                    </a>
+                </li>
+                <li>
+                    <a href="/author/root/de/de/home/produkte/fenstersysteme.html">
+                        <span>Fassadensysteme</span>
+                        <img src="../data/content/image/hueck-trigon-fs.png" alt="" />
+                    </a>
+                </li>
+                <li>
+                    <a href="/author/root/de/de/home/produkte/fenstersysteme.html">
+                        <span>Brandschutzsysteme</span>
+                        <img src="../data/content/image/hueck-lava-fs.png" alt="" />
+                    </a>
+                </li>
+                <li>
+                    <a href="/author/root/de/de/home/produkte/fenstersysteme.html">
+                        <span>Schiebesysteme</span>
+                        <img src="../data/content/image/hueck-volato-sls.png" alt="" />
+                    </a>
+                </li>
+            </ul>
+        </section>
+    
+        <section class="bottom">
+    
+            <div class="description col col-sm-4 col-md-7">
+                <p>Die Eduard Hueck GmbH & Co. KG ist ein weltweit agierender, kompetenter Produzent und Anbieter von Aluminiumprofil-Systemen für Fenster-, Türen- und Fassadenanwendungen sowie ein Produzent von Aluminiumprofilen für Industriekunden.<br>
+                    Hueck ist der einzige Systemhersteller, der an einem Standort über eine eigene Gießerei, ein Presswerk und eine Entwicklungsabteilung verfügt.</p>
+            </div>
+    
+            <div class="contact col col-sm-4 col-md-3">
+                <p>Eduard Hueck GmbH & Co. KG<br>
+                    Loher Straße 9<br>
+                    58511 Lüdenscheid</p>
+                <ul>
+                    <li>
+                        <span class="glyphicon-pin"><a href="${contactDocumentLink}">${contactDocumentLabel}</a></span>
+                    </li>
+                    <li>
+                        <span class="glyphicon-phone">${contactPhone}</span>
+                    </li>
+                    <li>
+                        <span class="glyphicon-fax">${contactFax}</span>
+                    </li>
+                    <li>
+                        <span class="glyphicon-mail">${contactEmail}</span>
+                    </li>
+                </ul>
+            </div>
+    
+            <div class="links col col-sm-4 col-md-2">
+                <ul>
+                    <li><a href="#">Impressum</a></li>
+                    <li><a href="#">Datenschutz</a></li>
+                    <li><a href="#">Newsletter</a></li>
+                    <li><a href="#">Cookie-Einstellungen</a></li>
+                </ul>
+                <p>&copy; 2014</p>
+            </div>
+    
+        </section>
+    </footer>
+    <div class="context controller smallSize small" data-controller="modules/Context" data-module="context">
+            <div class="inner">
+                <ul>
+                    <li>
+                        <h3 class="glyphicon glyphicon-info">Mehr<br> Informationen</h3>
+                        <ul class="info-links">
+                            <li>
+                                <a href="#">Zubehör</a>
+                            </li>
+                            <li>
+                                <a href="#">Werkzeuge</a>
+                            </li>
+                            <li>
+                                <div data-controller="fragments/Lightbox" data-fragment="globe" class="globe controller">
+                                    <a href="#" class="link open"><span class="glyphicon glyphicon-globe"></span>Weltkarte</a>
+                                    <hgroup>
+                                        <h2>HBPO Firmensitz, LIPPSTADT</h2>
+                                    </hgroup>
+                                    <div data-render-onload="false" data-text-link="zur Referenz" data-fragment="googleMaps" data-controller="fragments/GoogleMaps" data-zoom="14" data-id="gmap_canvas" data-width="444" data-height="417" class="googleMaps controller">
+                                        <div class="companies">
+                                            {
+                                                "companies":
+                                                    [
+                                                        {
+                                                            "company": "HBPO Firmensitz",
+                                                            "latLng": "51.67273,8.363619999999969",
+                                                            "street": "Rixbecker Straße 111",
+                                                            "zip": "59555",
+                                                            "city": "LIPPSTADT"
+                                                        },{
+                                                            "company": "Access Tower Frankfurt",
+                                                            "latLng": "50.0824619, 8.6296127",
+                                                            "street": "Lyoner Straße",
+                                                            "zip": "60528",
+                                                            "city": "Frankfurt",
+                                                            "link": "/_release/index.html"
+                                                        }
+                                                    ]
+                                            }
+                                        </div>
+                                    </div>
+    
+                                    <a data-element="closeButton" href="#" class="btn close btn-grey glyphicon-close"></a>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3 class="glyphicon glyphicon-download">Downloads</h3>
+                    </li>
+                    <li class="accordion">
+                        <div class="accordion controller" data-controller="fragments/Accordion" data-fragment="accordion" data-group="downloads">
+                            <a class="toggle btn btn-white"><span>Serienservices</span></a>
+                            <div class="content">
+                                <div class="textblock" data-fragment="textblock">
+                                    <p class="document controller" data-controller="fragments/Document" data-document="unsaved" data-target='.controller[data-controller="modules/Context"]' data-layer-target="#basketFull">
+                                        <a class="btn link-glyphicon glyphicon-cart-empty" href="001" data-rest="add">
+                                            <span>CAD-Profilkonturen lorem</span>
+                                        </a>
+                                        <a class="btn link-glyphicon glyphicon-cart-filled" href="001" data-rest="delete">
+                                            <span>CAD-Profilkonturen</span>
+                                        </a>
+                                    </p>
+                                    <p class="document controller" data-controller="fragments/Document" data-document="unsaved" data-target='.controller[data-controller="modules/Context"]' data-layer-target="#basketFull">
+                                        <a class="btn link-glyphicon glyphicon-cart-empty" href="002" data-rest="add">
+                                            <span>CAD-Schnittpunkte</span>
+                                        </a>
+                                        <a class="btn link-glyphicon glyphicon-cart-filled" href="002" data-rest="delete">
+                                            <span>CAD-Schnittpunkte</span>
+                                        </a>
+                                    </p>
+                                    <p class="document controller" data-controller="fragments/Document" data-document="unsaved" data-target='.controller[data-controller="modules/Context"]' data-layer-target="#basketFull">
+                                        <a class="btn link-glyphicon glyphicon-cart-empty" href="003" data-rest="add">
+                                            <span>Verarbeitung HJ-234 Textdokumenten</span>
+                                        </a>
+                                        <a class="btn link-glyphicon glyphicon-cart-filled" href="003" data-rest="delete">
+                                            <span>Verarbeitung HJ-234 Textdokumenten</span>
+                                        </a>
+                                    </p>
+                                    <!-- JIRA: HUECK-356-->
+                                    <p class="linkToDocs">
+                                        <a class="btn link-glyphicon glyphicon-cart-filled" href="#">
+                                            <span>Meine Dokumente</span>
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <!--<li class="accordion">
+                        <div class="accordion controller" data-controller="fragments/Accordion" data-fragment="accordion" data-group="downloads"  data-target-resize=".context">
+                            <a class="toggle btn btn-white"><span>Artikel zur Serie</span></a>
+                            <div class="content">
+                                <div class="textblock" data-fragment="textblock">
+                                    <hgroup>
+                                        <h4>Artikel zur Serie</h4>
+                                    </hgroup>
+                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
+                                    <p><a href="#">Mehr erfahren</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>   -->
+                    <!-- li>
+                        <div class="textblock" data-fragment="textblock">
+                            <hgroup>
+                                <h4>Optionaler Teaser</h4>
+                            </hgroup>
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
+                            <p><a href="#">Mehr erfahren</a></p>
+                        </div>
+                    </li -->
+                    <!-- li class="teaser">
+                        <div class="teaser controller layer default" data-href-target="extern" data-link-type="externalLink" data-controller="fragments/Teaser" data-fragment="teaser">
+                            <div class="magnifier controller" data-controller="fragments/Lightbox" data-fragment="magnifier">
+                                <div class="content open" data-element="fullscreenButton">
+                                    <h2>Unternehmensfilm</h2>
+                                    <div class="text">
+                                        <p>
+                                            Unternehmensfilm<a class="btn link glyphicon-arrow-right" href="http://www.youtube.com/embed/oggx16u9we8?rel=0"></a>
+                                        </p>
+                                    </div>
+                                </div>
+                                <span class="image loading open" data-asset="image">
+                                    <img class="img" data-src="../data/content/image/Unternehmensfilm.jpg" title="" alt="" src="">
+                                </span>
+                                <div class="layer">
+                                    <div class="video-container">
+                                        <iframe src="http://www.youtube.com/embed/oggx16u9we8?rel=0" frameborder="0" width="560" height="315"></iframe>
+                                    </div>
+                                </div>
+                                <a class="btn btn-grey glyphicon-close close" data-element="closeButton" href="#"></a>
+                            </div>
+                        </div>
+                    </li -->
+                    <!-- li class="teaser">
+                        <div class="teaser controller layer default" data-href-target="extern" data-link-type="externalLink" data-controller="fragments/Teaser" data-fragment="teaser">
+                            <div class="magnifier controller" data-controller="fragments/Lightbox" data-fragment="magnifier">
+                                <div class="content open" data-element="fullscreenButton">
+                                    <h2>Unternehmensfilm</h2>
+                                    <div class="text">
+                                        <p>
+                                            Unternehmensfilm<a class="btn link glyphicon-arrow-right" href="http://www.youtube.com/embed/oggx16u9we8?rel=0"></a>
+                                        </p>
+                                    </div>
+                                </div>
+                                <span class="image loading open" data-asset="image">
+                                    <img class="img" data-src="../data/content/image/Unternehmensfilm.jpg" title="" alt="" src="">
+                                </span>
+                                <div class="layer">
+                                    <div class="video-container">
+                                        <iframe src="http://www.youtube.com/embed/oggx16u9we8?rel=0" frameborder="0" width="560" height="315"></iframe>
+                                    </div>
+                                </div>
+                                <a class="btn btn-grey glyphicon-close close" data-element="closeButton" href="#"></a>
+                            </div>
+                        </div>
+                    </li -->
+                </ul>
+            </div>
+       <div class="lasche"><span>Details</span></div>
+    </div>
+    
+    <!-- div class="context controller smallSize small " data-controller="modules/Context" data-module="context">
+        <div class="inner">
+            <ul>
+                <li>
+                    <h3 class="glyphicon glyphicon-info">Archiv</h3>
+                    <ul class="info-links">
+                        <li>
+                            <a href="">Ausgabe 45</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="lasche"><span>Archiv</span></div>
+    </div -->    <!-- div id="tubular-container" style="overflow: hidden; position: fixed; z-index: 1; width: 100%; height: 100%">
+    <iframe width="100%" height="100%" src="//www.youtube.com/embed/LZ2OIaz_yi4?rel=0&autoplay=1" frameborder="0" allowfullscreen></iframe>
+    </div -->
+
+</div>
+
+<div class="globalLayer">
+
+<div class="layer controller" id="basketFull" data-fragment="layer" data-controller="fragments/Layer">
+    <div class="content">
+        <a class="btn btn-grey glyphicon-close" href="#" data-element="closeButton"></a>
+                <h3 class="black">Speichern nicht möglich</h3>
+        <div class="message error show" data-fragment="message">
+            <div class="icon"></div>
+            <div class="text">
+                <p>Sie haben die maximale Anzahl an Dokumenten erreicht. Senden Sie sich den Download-Link zu oder löschen Sie nicht mehr benötigte Dokumente.</p>
+                <p><a href="#1" class="btn link-glyphicon glyphicon-document"><span>Zu "MEINE DOKUMENTE"</span></a></p>
+                <p>Wenn Sie mehr Dokumente speichern möchten, könnten Sie sich <a href="#1" class="btn link">anmelden</a> oder <a href="#1" class="btn link">registrieren</a>.</p>
+            </div>
+        </div>
+
+    </div>
+</div><div class="layer controller" id="documentAlreadyExists" data-fragment="layer" data-controller="fragments/Layer">
+    <div class="content">
+        <a class="btn btn-grey glyphicon-close" href="#" data-element="closeButton"></a>
+                <h3 class="black">documentAlreadyExists</h3>
+        <div class="message error show" data-fragment="message">
+            <div class="icon"></div>
+            <div class="text">
+                <p>Sie haben Lorem.</p>
+            </div>
+        </div>
+
+    </div>
+</div><div class="layer controller" id="documentIsNull" data-fragment="layer" data-controller="fragments/Layer">
+    <div class="content">
+        <a class="btn btn-grey glyphicon-close" href="#" data-element="closeButton"></a>
+                <h3 class="black">documentIsNull</h3>
+        <div class="message error show" data-fragment="message">
+            <div class="icon"></div>
+            <div class="text">
+                <p>Sie haben Lorem.</p>
+            </div>
+        </div>
+
+    </div>
+</div>
+</div>
+
+    <script type="text/javascript">
+
+        window.hueck = {
+            "rest": {
+                /*
+                    URI: /ws/website/documents/{nodeId}
+                    Method: POST
+                    Parameter (optional): repository
+                    Parameter (optional): name
+                */
+                "add": {
+                    "url":      "../data/ajax/add_success.html#",
+                    "type":     "GET",
+                    "dataType": "JSON"
+                },
+                /*
+                    URI: /ws/website/documents/{nodeId}
+                    Method: DELETE
+                    Parameter (optional): repository
+                    Parameter (optional): name
+                */
+                "delete": {
+                    "url":      "../data/ajax/delete_success.html#",
+                    "type":     "GET",
+                    "dataType": "JSON"
+                }
+            }
+        }
+
+        if(!require) {
+            var require = {};
+        }
+        if(!require.config) {
+            require.config = {};
+        }
+        require = {
+            config: {
+                'baseUrl': '../js',
+                't8y/utils/parser': {
+                    parseOnLoad: true
+                }
+            }
+        };
+    </script>
+
+    <script data-main="../js/config" src="../_resources/bower/requirejs/require.js" type="text/javascript"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,127 @@
+.searchResult[data-module="form/searchResult"] {
+
+    .searchField[data-element="searchField"] {
+        .label {
+            display: none;
+        }
+        .select {
+            .field {
+                width: 100%;
+            }
+            .message[data-fragment="message"] {
+                padding: 0 @content-grid-padding @content-grid-padding 0;
+                width: 100%;
+            }
+        }
+        .datalist {
+            width: 70%;
+            float: left;
+        }
+        .btn {
+            margin: 0;
+            float: right;
+            max-width: 20%;
+            span {
+                white-space: normal;
+            }
+        }
+        .form-group {
+            margin-bottom: 0;
+            .select {
+                margin: 0;
+            }
+        }
+    }
+
+    .filter[data-element="filter"] {
+        float: left;
+        width: 100%;
+        position: relative;
+        .radio {
+            .field {
+                width: 33.33%;
+            }
+        }
+        .listing {
+            display: none;
+            &.visible {
+                display: block;
+            }
+        }
+        .col {
+            padding: 30px 0 @content-grid-padding;
+        }
+        .form-row {
+            padding: 45px 0 @content-grid-padding @content-grid-padding;
+        }
+        &.border-top {
+            &:before {
+                border-top: 1px solid #c8c8c8;
+                content: "";
+                height: 1px;
+                left: 25px;
+                position: absolute;
+                top: 15px;
+                width: 715px;
+            }
+        }
+    }
+
+    .form[data-module="form"] {
+        overflow: visible;
+    }
+
+    .row:first-child.border-bottom {
+        &:after {
+            bottom: 25px;
+        }
+    }
+    .row.border-bottom {
+        &:after {
+            bottom: 0;
+        }
+        &.filter:after {
+            bottom: 31px;
+        }
+        .col {
+            margin-bottom: 30px;
+        }
+    }
+
+    .row.border-top:before {
+        left: 25px !important;
+    }
+
+    .results {
+        float: left;
+        width: 100%;
+    }
+
+    .btn {
+        margin: 0 0 10px @content-grid-padding;
+
+        &.disabled {
+            span {
+                display: none;
+                &.hide {
+                    display: block !important;
+                }
+            }
+            &:before {
+                display: none;
+            }
+            padding: 0.75em 1.75em 0.75em 1.75em;
+        }
+    }
+
+    h2 {
+        margin: 0;
+    }
+
+    > .row > .col > .download[data-fragment="listing/download"]:first-child {
+        margin-top: 0 !important;
+    }
+
+
+}
+

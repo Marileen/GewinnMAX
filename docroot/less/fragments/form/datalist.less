@@ -1,0 +1,78 @@
+.select {
+
+    &.datalist {
+
+        datalist {
+            display: none;
+            option {
+                display: none;
+            }
+        }
+
+        .field {
+
+            .input {
+                display: none;
+                > span, > a {
+                    display: table;
+                    border-top: 1px solid @hueck-form-grey;
+                    padding: 0.65em 0.75em;
+                    &:first-child {
+                        border-top: 0 none;
+                    }
+                    &[data-link] {
+                        color: @hueck-blue;
+                        text-decoration: underline;
+                        &:hover {
+                            color: @hueck-black;
+                        }
+
+                    }
+                }
+            }
+            input {
+                padding: 0.75em 2.25em 0.75em 0.75em;
+            }
+
+            &.open {
+                .input {
+                    margin: -1px 0 0;
+                }
+            }
+
+            &:hover, &.hover, &.open {
+                input {
+                    border: solid 1px @hueck-form-blue;
+                    padding: 0.75em 2.25em 0.75em 0.75em;
+                }
+                .input {
+                    border-top: 0 none;
+                    border-left: solid 1px @hueck-form-blue;
+                    border-right: solid 1px @hueck-form-blue;
+                    border-bottom: solid 1px @hueck-form-blue;
+                }
+            }
+
+            &.hover, &.open {
+                .input {
+                    display: inline-block;
+                }
+            }
+
+        }
+
+        .clear {
+            cursor: pointer;
+            font-size: 1.25em;
+            position: absolute;
+            right: 10px;
+            top: 13px;
+            color: @hueck-blue;
+            &:hover {
+                color: @hueck-grey;
+            }
+        }
+
+    }
+
+}

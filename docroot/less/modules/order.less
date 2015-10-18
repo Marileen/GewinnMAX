@@ -1,0 +1,189 @@
+.order[data-module="order"] {
+
+    width: 100%;
+    float: left;
+    //background-color: @hueck-order-gray-dark;
+    padding: @content-grid-padding;
+
+    .form-row {
+        padding: 0;
+    }
+
+    .headline {
+        min-height: 60px;
+        .phone {
+            padding: 7px 0 0 30px;
+            line-height: 1.5em;
+            position: relative;
+            .glyphicon-phone {
+                font-size: 1.5em;
+                position: absolute;
+                left: 0;
+                top: 6px;
+            }
+        }
+    }
+
+    .list {
+
+        .order-item {
+
+            position: relative;
+            float: left;
+
+            border-top: 1px solid @hueck-order-gray-border;
+            padding: 25px 0 0;
+            &:first-child {
+                border-top: 0 none;
+            }
+
+            .questionmark[data-fragment="questionmark"] {
+                right: -6px;
+                top: -6px;
+            }
+
+            .table-head {
+                background-color: @hueck-order-gray-light;
+                font-weight: bold;
+                float: left;
+                padding: 15px;
+                width: 100%;
+                p {
+                    margin: 0;
+                }
+            }
+
+            .table-body {
+                float: left;
+                padding: 15px;
+                width: 100%;
+                p {
+                    margin: 0 9px 9px 0;
+                }
+            }
+
+            .table-message {
+                float: left;
+                width: 100%;
+
+                .message[data-fragment="message"] {
+                    padding: 12px;
+                    margin: 0 0 3px;
+                    background-color: @hueck-order-gray-light;
+                    .text {
+                        padding: 0 2.75em 0 0.75em;
+                    }
+                    .icon {
+                        &:before {
+                            font-size: 3em;
+                            .gt-ie8 & {
+                                font-size: 45px;
+                            }
+                        }
+                    }
+                    &.failure {
+                        .icon {
+                            &:before,
+                            &:after {
+                                font-size: 2.25em;
+                                .gt-ie8 & {
+                                    font-size: 35px;
+                                }
+                            }
+                        }
+                    }
+                    .questionmark[data-fragment="questionmark"] {
+                        right: 17px;
+                        top: 19px;
+                    }
+                }
+
+            }
+
+            .table-inner,
+            .table-difference-inner,
+            .table-difference {
+                float: left;
+                width: 100%;
+                padding: 6px 12px;
+                margin: 0 0 3px;
+                background-color: @hueck-order-gray-light;
+
+                .row {
+                    padding: 6px 0;
+                }
+                tr {
+                    vertical-align: top;
+                    td {
+                        padding: 6px 0 6px 12px;
+                    }
+                }
+                &.small {
+                    font-size: 12px;
+                    line-height: 14px;
+                    tr {
+                        td {
+                            padding: 6px 0 6px 6px;
+                            &:first-child {
+                                padding-left: 12px;
+                            }
+                        }
+                    }
+                }
+            }
+
+
+
+            .table-inner {
+                visibility: hidden;
+                position: absolute;
+                margin: 0 0 25px;
+            }
+
+            .table-footer {
+                float: left;
+                padding: 15px;
+                width: 100%;
+                .table-toggle {
+                    color: @hueck-blue;
+                    text-decoration: underline;
+                    cursor: pointer;
+                    &:hover {
+                        color: @hueck-black;
+                    }
+                    .table-show {
+                        visibility: visible;
+                        position: relative;
+                    }
+                    .table-hide {
+                        visibility: hidden;
+                        position: absolute;
+                    }
+                }
+            }
+
+
+            &.show-inner-table {
+                .table-inner {
+                    visibility: visible;
+                    position: relative;
+                }
+                .table-toggle {
+                    .table-show {
+                        visibility: hidden;
+                        position: absolute;
+                    }
+                    .table-hide {
+                        visibility: visible;
+                        position: relative;
+                    }
+                }
+            }
+
+        }
+
+    }
+
+
+
+}

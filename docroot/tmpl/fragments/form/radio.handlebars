@@ -1,0 +1,21 @@
+<div class="radio">
+    <div class="label">{{label}}</div>
+    <label>
+
+        {{#each list}}
+            <div class="field controller" data-controller="fragments/form/Radio" data-type="radio">
+                <input type="radio" class="form-control" name="{{name}}" id="{{id}}" value="{{value}}" {{#if required}}required{{/if}} {{#if checked}}checked="checked"{{/if}}>
+                <span class="input glyphicon"></span>
+                <span class="text"><p>{{text}}</p></span>
+            </div>
+        {{/each}}
+        {{#each message}}
+            <div class="message {{type}} {{#if show}}show{{/if}}" data-fragment="message">
+                <div class="icon"></div>
+                <div class="text">
+                    {{{text}}}
+                </div>
+            </div>
+        {{/each}}
+    </label>
+</div>

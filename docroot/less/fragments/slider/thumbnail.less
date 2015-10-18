@@ -1,0 +1,108 @@
+.thumbnail[data-fragment="slider/thumbnail"] {
+
+    position: absolute;
+    bottom: -60px;
+    .openThumb &, .fullscreen & {
+        bottom: 0;
+    }
+    width: 740px;
+    min-height: 60px;
+
+    .btn {
+        bottom: 0;
+        top: auto !important;
+    }
+
+    .inner {
+        max-height: 60px;
+    }
+
+    .slider[data-fragment="slider"] {
+
+        width: 647px;
+        margin: 0 47px;
+        max-height: 60px;
+        text-align: center;
+        background-color: @hueck-transparent-grey;
+
+        [data-element="view"] {
+            width: 81px;
+            max-height: 60px;
+            cursor: pointer;
+            border-right: 1px solid @hueck-black;
+
+            .image {
+                background-color: @hueck-transparent-grey;
+                display: inline-block;
+                overflow: hidden;
+                width: 100%;
+
+                img {
+                    .opacity(.4);
+                    max-height: 60px;
+                    min-height: 60px;
+                }
+            }
+
+            &:hover {
+                span {
+                    img {
+                        .opacity(1);
+                    }
+                }
+            }
+            &.active {
+                border-right: 1px solid @hueck-black;
+                span {
+                    img {
+                        .opacity(1);
+                    }
+                }
+            }
+        }
+
+    }
+
+    .slider[data-fragment="slider/pager"] {
+
+        width: 44px;
+        height: 60px;
+        border: none;
+
+        .galerie[data-fragment="galerie"] & {
+            display: block;
+            &:before {
+                top: 9px;
+                right: 12px;
+                display: none;
+            }
+            &:hover {
+                background-color: @hueck-transparent-grey;
+                cursor: default;
+            }
+
+            &.active {
+                &:before {
+                    display: block;
+                }
+                &:hover {
+                    background-color: @hueck-transparent-grey-hover;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        &.prev {
+            top: 0;
+            width: 47px;
+            .box-shadow( none );
+        }
+        &.next {
+            top: 0;
+            width: 46px;
+            .box-shadow( none );
+        }
+
+    }
+
+}

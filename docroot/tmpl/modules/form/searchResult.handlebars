@@ -1,0 +1,126 @@
+<div class="searchResult" data-module="form/searchResult">
+
+    <div class="row">
+        <div class="col col-9">
+
+            <form class="form controller" data-module="form" data-controller="fragments/Form" action="" method="GET">
+
+                {{>assets/hgroup page.content.headline}}
+
+                <div class="searchField" data-element="searchField">
+                    <div class="form-row border-bottom">
+                        <div class="form-group">
+                            {{>fragments/form/datalist page.content.search}}
+                            <button class="btn btn-blue" type="submit" value="submit"><span>Finden</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="filter controller" data-element="filter" data-controller="fragments/form/Filter" data-content-target=".searchResult">
+                    <div class="form-row">
+                        <div class="form-group no-margin">
+                            {{>fragments/form/radio page.content.filter}}
+                        </div>
+                    </div>
+                </div>
+
+            </form>
+
+        </div>
+    </div>
+
+    <div class="row border-top border-bottom results">
+        <div class="col col-9">
+            {{>assets/hgroup page.content.headlineProdukte}}
+        </div>
+    </div>
+
+    <div class="row product">
+        <div class="col col-9">
+            {{>fragments/listing/download page.content.listing3}}
+            {{>fragments/listing/download page.content.listing1}}
+            {{>fragments/listing/download page.content.listing6}}
+            {{>fragments/listing/download page.content.listing7}}
+            {{>fragments/listing/download page.content.listing4}}
+            {{>fragments/listing/download page.content.listing2}}
+            {{>fragments/listing/download page.content.listing5}}
+            {{>fragments/listing/download page.content.listing6}}
+            {{>fragments/listing/download page.content.listing7}}
+            {{>fragments/listing/download page.content.listing4}}
+            {{>fragments/listing/download page.content.listing2}}
+            {{>fragments/listing/download page.content.listing5}}
+            {{>fragments/listing/download page.content.listing6}}
+            {{>fragments/listing/download page.content.listing7}}
+            {{>fragments/listing/download page.content.listing4}}
+            {{>fragments/listing/download page.content.listing2}}
+            {{>fragments/listing/download page.content.listing5}}
+            {{>fragments/listing/download page.content.listing6}}
+            {{>fragments/listing/download page.content.listing7}}
+            {{>fragments/listing/download page.content.listing4}}
+            {{>fragments/listing/download page.content.listing2}}
+            {{>fragments/listing/download page.content.listing5}}
+        </div>
+    </div>
+
+    <div class="row border-bottom filter controller" data-element="filter" data-controller="fragments/form/Filter" data-content-target=".product" data-show-onload="5" data-show-ajaxload="10">
+        <div class="col col-9">
+            <span class="btn btn-blue more"><span>Mehr Treffer anzeigen</span><span class="hide">Keine weiteren Treffer</span></span>
+        </div>
+    </div>
+
+    <div class="row border-bottom">
+        <div class="col col-9">
+            {{>assets/hgroup page.content.headlineInformatinonen}}
+        </div>
+    </div>
+    <div class="row information">
+        <div class="col col-9">
+            {{>fragments/listing/download page.content.listing1}}
+            {{>fragments/listing/download page.content.listing3}}
+            {{>fragments/listing/download page.content.listing4}}
+            {{>fragments/listing/download page.content.listing2}}
+            {{>fragments/listing/download page.content.listing3}}
+            {{>fragments/listing/download page.content.listing4}}
+            {{>fragments/listing/download page.content.listing2}}
+            {{>fragments/listing/download page.content.listing3}}
+            {{>fragments/listing/download page.content.listing4}}
+            {{>fragments/listing/download page.content.listing2}}
+            {{>fragments/listing/download page.content.listing3}}
+            {{>fragments/listing/download page.content.listing4}}
+            {{>fragments/listing/download page.content.listing2}}
+            {{>fragments/listing/download page.content.listing3}}
+            {{>fragments/listing/download page.content.listing4}}
+            {{>fragments/listing/download page.content.listing2}}
+            {{>fragments/listing/download page.content.listing3}}
+            {{>fragments/listing/download page.content.listing4}}
+            {{>fragments/listing/download page.content.listing2}}
+            {{>fragments/listing/download page.content.listing5}}
+        </div>
+    </div>
+
+    <div class="row border-bottom filter controller" data-element="filter" data-controller="fragments/form/Filter" data-content-target=".information" data-show-onload="5" data-show-ajaxload="10">
+        <div class="col col-9">
+            <span class="btn btn-blue more"><span>Mehr Treffer anzeigen</span><span class="hide">Keine weiteren Treffer</span></span>
+        </div>
+    </div>
+
+    <div class="row border-bottom">
+        <div class="col col-9">
+            {{>assets/hgroup page.content.headlineReferenzen}}
+        </div>
+    </div>
+    <div class="row referenzen">
+        <div class="col col-9">
+            {{>fragments/listing/download page.content.listing4}}
+            {{>fragments/listing/download page.content.listing3}}
+            {{>fragments/listing/download page.content.listing4}}
+        </div>
+    </div>
+
+    <div class="row border-bottom filter controller" data-element="filter" data-controller="fragments/form/Filter" data-content-target=".referenzen" data-show-onload="5" data-show-ajaxload="10">
+        <div class="col col-9">
+            <span class="btn btn-blue more"><span>Mehr Treffer anzeigen</span><span class="hide">Keine weiteren Treffer</span></span>
+        </div>
+    </div>
+
+</div>

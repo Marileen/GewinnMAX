@@ -1,0 +1,76 @@
+.footer[data-common="gw-footer"] {
+
+  padding-top: 25px;
+
+  .shadow(#ffffff, rgba(23,54,93,0.28));
+
+  nav {
+    text-align: center;
+
+    ul {
+      display: inline-block;
+    }
+  }
+
+  .gradient {
+    position: relative;
+    
+    &:before {
+      content: "";
+      height: 45px;
+      display: block;
+      width: 100%;
+      position: absolute;
+      top:0;
+      left:0;
+
+      /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&amp;1+0,0+100 */
+      background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%); /* FF3.6+ */
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
+      background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
+      background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* Opera 11.10+ */
+      background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* IE10+ */
+      background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* W3C */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
+
+    }
+  }
+
+  nav ul li {
+    float: left;
+    margin: 10px 0;
+    padding: 0 15px;
+    font-family: Arial;
+    font-size: 15px;
+    position: relative;
+
+    &:after {
+      content: "";
+      border-right: 2px solid #333;
+      opacity: 0.6;
+      position: absolute;
+      right: 0;
+      top: 2px;
+      width: 0;
+      height: 13px;
+
+    }
+
+    &:last-child:after {
+      border: none;
+    }
+
+    a, a:visited {
+      color: #333;
+      text-decoration: none;
+    }
+
+    a:active, a:hover {
+      color: #666;
+      text-decoration: none;
+    }
+
+  }
+
+
+}

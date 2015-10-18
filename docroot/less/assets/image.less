@@ -1,0 +1,37 @@
+.image[data-asset="image"] {
+
+    &.loading {
+        padding: 0 0 0 26px;
+        position: relative;
+        background-color: transparent !important;
+        &:before {
+            content: "Loading...";
+            font-family: @font-family-base;
+            font-size: @font-size-smaller;
+            color: @hueck-blue;
+        }
+    }
+
+    img {
+        font-family: @font-family-base;
+        font-size: @font-size-smaller;
+        color: @hueck-grey;
+        line-height: 0;
+    }
+
+    &.zoomable {
+        .img {
+            display: inline-block;
+            .fullscreen & {
+                display: none;
+            }
+        }
+        .zoom {
+            display: none;
+            .fullscreen & {
+                display: inline-block;
+            }
+        }
+    }
+
+}

@@ -1,0 +1,84 @@
+<div class="globalLayer">
+
+    {{#fragment "layer" id="basketFull" }}
+        <h3 class="black">Speichern nicht möglich</h3>
+        <div class="message error show" data-fragment="message">
+            <div class="icon"></div>
+            <div class="text">
+                <p>Sie haben die maximale Anzahl an Dokumenten erreicht. Senden Sie sich den Download-Link zu oder löschen Sie nicht mehr benötigte Dokumente.</p>
+                <p><a href="#1" class="btn link-glyphicon glyphicon-document"><span>Zu "MEINE DOKUMENTE"</span></a></p>
+                <p>Wenn Sie mehr Dokumente speichern möchten, könnten Sie sich <a href="#1" class="btn link">anmelden</a> oder <a href="#1" class="btn link">registrieren</a>.</p>
+            </div>
+        </div>
+    {{/fragment}}
+    {{#fragment "layer" id="documentAlreadyExists" }}
+        <h3 class="black">documentAlreadyExists</h3>
+        <div class="message error show" data-fragment="message">
+            <div class="icon"></div>
+            <div class="text">
+                <p>Sie haben Lorem.</p>
+            </div>
+        </div>
+    {{/fragment}}
+    {{#fragment "layer" id="documentIsNull" }}
+        <h3 class="black">documentIsNull</h3>
+        <div class="message error show" data-fragment="message">
+            <div class="icon"></div>
+            <div class="text">
+                <p>Sie haben Lorem.</p>
+            </div>
+        </div>
+    {{/fragment}}
+
+</div>
+
+    <script type="text/javascript">
+
+        window.hueck = {
+            "rest": {
+                /*
+                    URI: /ws/website/documents/{nodeId}
+                    Method: POST
+                    Parameter (optional): repository
+                    Parameter (optional): name
+                */
+                "add": {
+                    "url":      "../data/ajax/add_success.html#",
+                    "type":     "GET",
+                    "dataType": "JSON"
+                },
+                /*
+                    URI: /ws/website/documents/{nodeId}
+                    Method: DELETE
+                    Parameter (optional): repository
+                    Parameter (optional): name
+                */
+                "delete": {
+                    "url":      "../data/ajax/delete_success.html#",
+                    "type":     "GET",
+                    "dataType": "JSON"
+                }
+            }
+        }
+
+        if(!require) {
+            var require = {};
+        }
+        if(!require.config) {
+            require.config = {};
+        }
+        require = {
+            config: {
+                'baseUrl': '{{basePath}}js',
+                't8y/utils/parser': {
+                    parseOnLoad: true
+                }
+            }
+        };
+    </script>
+
+{{#if dev}}
+    <script data-main="{{basePath}}js/config" src="{{basePath}}_resources/bower/requirejs/require.js" type="text/javascript"></script>
+{{else}}
+    <script src="{{basePath}}_release/js/main.js" type="text/javascript"></script>
+{{/if}}

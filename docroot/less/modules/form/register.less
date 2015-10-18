@@ -1,0 +1,30 @@
+.register[data-module="form/register"] {
+    &.ansprechpartner {
+        .radio .field {
+            width: 30%;
+        }
+        .radio .message[data-fragment="message"] {
+            width: 0%;
+        }
+        .has-error {
+            .radio .message.error[data-fragment="message"] {
+                padding-right: 0 !important;
+                width: 40%;
+            }
+        }
+        .has-success {
+            .radio .message.success[data-fragment="message"] {
+                width: 32%;
+            }
+        }
+        .form-row.button-row {
+            .btn {
+                margin-bottom: 0;
+            }
+        }
+        .form-group.has-success .message.success[data-fragment="message"],
+        .form-group.has-error .message.error[data-fragment="message"] {
+            padding: 0 0 25px 96px;
+        }
+    }
+}
