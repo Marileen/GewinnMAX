@@ -1,35 +1,5 @@
 {
-    "dev": true,
-    "author": "t8y.com gmbh",
-    "header": {
-        "logo": {
-            "href": "index.html",
-            "src": "../assets/img/hueck-logo.png",
-            "title": "ALUMINIUM SYSTEMS @ HUECK"
-        },
-        "tooltipLogo": {
-            "text": "<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>"
-        },
-        "menu": {
-            "loggedIn": false
-        },
-        "mega" : {
-            "agb": {
-                "id": "agb",
-                "name": "agb",
-                "value": "agb",
-                "text": "<p>Bitte akzeptieren Sie unsere <a href='#'>Datenschutzbestimmungen*</a>.</p>",
-                "required": true,
-                "message": [
-                    {
-                        "type": "success"
-                    }, {
-                        "type": "error",
-                        "text": "<p>Fehler: Lorem ipsum dolor sit amet.</p>"
-                    }
-                ]
-            }
-        }
-    }
+    "dev": false,
+    "author": "GewinnMAX GmbH"
 
 }

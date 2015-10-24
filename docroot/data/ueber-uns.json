@@ -1,10 +1,10 @@
 {
     "page": {
-        "basePath": "../",
+        "basePath": "",
         "title": "GewinnMAX - Unternehmensberatung",
         "head": {
-            "description": "description",
-            "keywords": "keywords"
+            "description": "Über uns - was ist GewinnMAX",
+            "keywords": "Unternehmensberatung"
         },
         "content": {
 
