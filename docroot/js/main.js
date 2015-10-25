@@ -1,10 +1,9 @@
 define([
 
     'jquery',
-    'modules/Navigartion'
-], function($, imageLoader) {
 
-    //imageLoader.parse();
-
+    't8y/utils/parser',
+    'modules/Navigation'
+], function($) {
 
 });

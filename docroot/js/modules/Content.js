@@ -11,6 +11,7 @@ define([ 'jquery', 'backbone', 'underscore', 'sortElements' ], function( $, Back
             minHeight = (minHeight<400) ? 400 : minHeight+8;
             this.$el.css({ minHeight: minHeight });
 
+
             // this is for tables which has to be sortable - tables are defined in FcK Editor, so we
             // don't have a component for it and have to look for table.sort in each Content Controller
             var $tables = $('table.sort', this.$el);

@@ -11,6 +11,7 @@ define(['module', 'jquery', 't8y/types/Controller'], function (module, $, Contro
         initialize: function () {
 
             Controller.prototype.initialize.apply(this, arguments);
+            console.log('Main Navi hover init');
 
         }
     });
