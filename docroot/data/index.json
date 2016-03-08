@@ -3,7 +3,7 @@
         "basePath": "",
         "title": "GewinnMAX - Unternehmensberatung",
         "head": {
-            "description": "GewinnMax beschäftigt sich mit der der Beratung von Firmen und privaten Haushalten.",
+            "description": "GewinnMax beschäftigt sich mit der Beratung von Firmen und privaten Haushalten.",
             "keywords": "Unternehmensberatung Finanzen Haushalt Private Beratung Finanzierung Gewinn Depot Finanzcheck"
         },
         "content": {
@@ -14,7 +14,7 @@
                         "content" : "Über uns"
                     },
                     "headline": "Wir beraten und betreuen",
-                    "text" : "GewinnMax beschäftigt sich mit der der Beratung von Firmen und privaten Haushalten. Unternehmen und private Haushalte wollen Kosten senken und Gewinne erhöhen. Wir sind die Unternehmensberater für Firmen und private Haushalte. Die Aufgabe unserer Spezialisten ist die Senkung der laufenden Kosten, effizienterer Einsatz der finanziellen Mittel und die Erhöhung der Einnahmen.",
+                    "text" : "GewinnMax beschäftigt sich mit der Beratung von Firmen und privaten Haushalten. Unternehmen und private Haushalte wollen Kosten senken und Gewinne erhöhen. Wir sind die Unternehmensberater für Firmen und private Haushalte. Die Aufgabe unserer Spezialisten ist die Senkung der laufenden Kosten, effizienterer Einsatz der finanziellen Mittel und die Erhöhung der Einnahmen.",
                     "link": {
                         "text" : "Erfahren Sie mehr",
                         "url" : "ueber-uns.html"
